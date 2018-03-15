@@ -1,0 +1,563 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A1B365D1205A0665009698B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B365D0205A0665009698B0 /* AppDelegate.swift */; };
+		A1B365D3205A0665009698B0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B365D2205A0665009698B0 /* ViewController.swift */; };
+		A1B365D6205A0665009698B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1B365D4205A0665009698B0 /* Main.storyboard */; };
+		A1B365D8205A0665009698B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1B365D7205A0665009698B0 /* Assets.xcassets */; };
+		A1B365DB205A0665009698B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1B365D9205A0665009698B0 /* LaunchScreen.storyboard */; };
+		A1B365E6205A0665009698B0 /* LillyPal_CardsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B365E5205A0665009698B0 /* LillyPal_CardsTests.swift */; };
+		A1B365F1205A0665009698B0 /* LillyPal_CardsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B365F0205A0665009698B0 /* LillyPal_CardsUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A1B365E2205A0665009698B0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A1B365C5205A0665009698B0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A1B365CC205A0665009698B0;
+			remoteInfo = "LillyPal Cards";
+		};
+		A1B365ED205A0665009698B0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A1B365C5205A0665009698B0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A1B365CC205A0665009698B0;
+			remoteInfo = "LillyPal Cards";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A1B365CD205A0665009698B0 /* LillyPal Cards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LillyPal Cards.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1B365D0205A0665009698B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A1B365D2205A0665009698B0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A1B365D5205A0665009698B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A1B365D7205A0665009698B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A1B365DA205A0665009698B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A1B365DC205A0665009698B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1B365E1205A0665009698B0 /* LillyPal CardsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "LillyPal CardsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1B365E5205A0665009698B0 /* LillyPal_CardsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LillyPal_CardsTests.swift; sourceTree = "<group>"; };
+		A1B365E7205A0665009698B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1B365EC205A0665009698B0 /* LillyPal CardsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "LillyPal CardsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1B365F0205A0665009698B0 /* LillyPal_CardsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LillyPal_CardsUITests.swift; sourceTree = "<group>"; };
+		A1B365F2205A0665009698B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A1B365CA205A0665009698B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1B365DE205A0665009698B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1B365E9205A0665009698B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A1B365C4205A0665009698B0 = {
+			isa = PBXGroup;
+			children = (
+				A1B365CF205A0665009698B0 /* LillyPal Cards */,
+				A1B365E4205A0665009698B0 /* LillyPal CardsTests */,
+				A1B365EF205A0665009698B0 /* LillyPal CardsUITests */,
+				A1B365CE205A0665009698B0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A1B365CE205A0665009698B0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A1B365CD205A0665009698B0 /* LillyPal Cards.app */,
+				A1B365E1205A0665009698B0 /* LillyPal CardsTests.xctest */,
+				A1B365EC205A0665009698B0 /* LillyPal CardsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A1B365CF205A0665009698B0 /* LillyPal Cards */ = {
+			isa = PBXGroup;
+			children = (
+				A1B365D0205A0665009698B0 /* AppDelegate.swift */,
+				A1B365D2205A0665009698B0 /* ViewController.swift */,
+				A1B365D4205A0665009698B0 /* Main.storyboard */,
+				A1B365D7205A0665009698B0 /* Assets.xcassets */,
+				A1B365D9205A0665009698B0 /* LaunchScreen.storyboard */,
+				A1B365DC205A0665009698B0 /* Info.plist */,
+			);
+			path = "LillyPal Cards";
+			sourceTree = "<group>";
+		};
+		A1B365E4205A0665009698B0 /* LillyPal CardsTests */ = {
+			isa = PBXGroup;
+			children = (
+				A1B365E5205A0665009698B0 /* LillyPal_CardsTests.swift */,
+				A1B365E7205A0665009698B0 /* Info.plist */,
+			);
+			path = "LillyPal CardsTests";
+			sourceTree = "<group>";
+		};
+		A1B365EF205A0665009698B0 /* LillyPal CardsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A1B365F0205A0665009698B0 /* LillyPal_CardsUITests.swift */,
+				A1B365F2205A0665009698B0 /* Info.plist */,
+			);
+			path = "LillyPal CardsUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A1B365CC205A0665009698B0 /* LillyPal Cards */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1B365F5205A0665009698B0 /* Build configuration list for PBXNativeTarget "LillyPal Cards" */;
+			buildPhases = (
+				A1B365C9205A0665009698B0 /* Sources */,
+				A1B365CA205A0665009698B0 /* Frameworks */,
+				A1B365CB205A0665009698B0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "LillyPal Cards";
+			productName = "LillyPal Cards";
+			productReference = A1B365CD205A0665009698B0 /* LillyPal Cards.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A1B365E0205A0665009698B0 /* LillyPal CardsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1B365F8205A0665009698B0 /* Build configuration list for PBXNativeTarget "LillyPal CardsTests" */;
+			buildPhases = (
+				A1B365DD205A0665009698B0 /* Sources */,
+				A1B365DE205A0665009698B0 /* Frameworks */,
+				A1B365DF205A0665009698B0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A1B365E3205A0665009698B0 /* PBXTargetDependency */,
+			);
+			name = "LillyPal CardsTests";
+			productName = "LillyPal CardsTests";
+			productReference = A1B365E1205A0665009698B0 /* LillyPal CardsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A1B365EB205A0665009698B0 /* LillyPal CardsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1B365FB205A0665009698B0 /* Build configuration list for PBXNativeTarget "LillyPal CardsUITests" */;
+			buildPhases = (
+				A1B365E8205A0665009698B0 /* Sources */,
+				A1B365E9205A0665009698B0 /* Frameworks */,
+				A1B365EA205A0665009698B0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A1B365EE205A0665009698B0 /* PBXTargetDependency */,
+			);
+			name = "LillyPal CardsUITests";
+			productName = "LillyPal CardsUITests";
+			productReference = A1B365EC205A0665009698B0 /* LillyPal CardsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A1B365C5205A0665009698B0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Escape Chaos";
+				TargetAttributes = {
+					A1B365CC205A0665009698B0 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					A1B365E0205A0665009698B0 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A1B365CC205A0665009698B0;
+					};
+					A1B365EB205A0665009698B0 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A1B365CC205A0665009698B0;
+					};
+				};
+			};
+			buildConfigurationList = A1B365C8205A0665009698B0 /* Build configuration list for PBXProject "LillyPal Cards" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A1B365C4205A0665009698B0;
+			productRefGroup = A1B365CE205A0665009698B0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A1B365CC205A0665009698B0 /* LillyPal Cards */,
+				A1B365E0205A0665009698B0 /* LillyPal CardsTests */,
+				A1B365EB205A0665009698B0 /* LillyPal CardsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A1B365CB205A0665009698B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1B365DB205A0665009698B0 /* LaunchScreen.storyboard in Resources */,
+				A1B365D8205A0665009698B0 /* Assets.xcassets in Resources */,
+				A1B365D6205A0665009698B0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1B365DF205A0665009698B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1B365EA205A0665009698B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A1B365C9205A0665009698B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1B365D3205A0665009698B0 /* ViewController.swift in Sources */,
+				A1B365D1205A0665009698B0 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1B365DD205A0665009698B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1B365E6205A0665009698B0 /* LillyPal_CardsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1B365E8205A0665009698B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1B365F1205A0665009698B0 /* LillyPal_CardsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A1B365E3205A0665009698B0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A1B365CC205A0665009698B0 /* LillyPal Cards */;
+			targetProxy = A1B365E2205A0665009698B0 /* PBXContainerItemProxy */;
+		};
+		A1B365EE205A0665009698B0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A1B365CC205A0665009698B0 /* LillyPal Cards */;
+			targetProxy = A1B365ED205A0665009698B0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A1B365D4205A0665009698B0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A1B365D5205A0665009698B0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A1B365D9205A0665009698B0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A1B365DA205A0665009698B0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A1B365F3205A0665009698B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A1B365F4205A0665009698B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A1B365F6205A0665009698B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2ASS3F562Z;
+				INFOPLIST_FILE = "LillyPal Cards/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "EscapeChaos.LillyPal-Cards";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A1B365F7205A0665009698B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2ASS3F562Z;
+				INFOPLIST_FILE = "LillyPal Cards/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "EscapeChaos.LillyPal-Cards";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A1B365F9205A0665009698B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2ASS3F562Z;
+				INFOPLIST_FILE = "LillyPal CardsTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "EscapeChaos.LillyPal-CardsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LillyPal Cards.app/LillyPal Cards";
+			};
+			name = Debug;
+		};
+		A1B365FA205A0665009698B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2ASS3F562Z;
+				INFOPLIST_FILE = "LillyPal CardsTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "EscapeChaos.LillyPal-CardsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LillyPal Cards.app/LillyPal Cards";
+			};
+			name = Release;
+		};
+		A1B365FC205A0665009698B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2ASS3F562Z;
+				INFOPLIST_FILE = "LillyPal CardsUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "EscapeChaos.LillyPal-CardsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "LillyPal Cards";
+			};
+			name = Debug;
+		};
+		A1B365FD205A0665009698B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2ASS3F562Z;
+				INFOPLIST_FILE = "LillyPal CardsUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "EscapeChaos.LillyPal-CardsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "LillyPal Cards";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A1B365C8205A0665009698B0 /* Build configuration list for PBXProject "LillyPal Cards" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1B365F3205A0665009698B0 /* Debug */,
+				A1B365F4205A0665009698B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1B365F5205A0665009698B0 /* Build configuration list for PBXNativeTarget "LillyPal Cards" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1B365F6205A0665009698B0 /* Debug */,
+				A1B365F7205A0665009698B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1B365F8205A0665009698B0 /* Build configuration list for PBXNativeTarget "LillyPal CardsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1B365F9205A0665009698B0 /* Debug */,
+				A1B365FA205A0665009698B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1B365FB205A0665009698B0 /* Build configuration list for PBXNativeTarget "LillyPal CardsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1B365FC205A0665009698B0 /* Debug */,
+				A1B365FD205A0665009698B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A1B365C5205A0665009698B0 /* Project object */;
+}
