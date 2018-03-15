@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CardDeckTVC: UITableViewController {
+class CardDeckTVC: UITableViewController, ParentHasDataModel {
 
     // MARK: - Properties
     
@@ -19,16 +19,13 @@ class CardDeckTVC: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        listenForDataModelChanges()
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
     // MARK: - Table view data source
@@ -98,4 +95,15 @@ extension CardDeckTVC {
      return true
      }
      */
+}
+
+protocol ParentHasDataModel { }
+
+extension ParentHasDataModel where Self: CardDeckTVC {
+    
+    func listenForDataModelChanges() {
+        NotificationCenter.default.addObserver(forName: playerChangeNotification, object: nil, queue: nil) { _ in
+            self.tableView.reloadData()
+        }
+    }
 }

@@ -14,8 +14,7 @@ class MainViewController: UIViewController, MainViewDecorator {
     
     var numberOfPlayers = 0 {
         didSet {
-            guard numberOfPlayers != -1 else { numberOfPlayers = 0; return }
-            guard numberOfPlayers != 13 else { numberOfPlayers = 12; return }
+            NotificationCenter.default.post(name: playerChangeNotification, object: numberOfPlayers)
             numberOfPlayersField.text = "\(numberOfPlayers)"
         }
     }
@@ -31,7 +30,7 @@ class MainViewController: UIViewController, MainViewDecorator {
     // MARK: - Functions: IBActions
     
     @IBAction func numberOfPlayersStepped(_ sender: UIStepper) {
-        self.numberOfPlayers = sender.value as? Int
+        self.numberOfPlayers = Int(exactly: sender.value) ?? 0
     }
     
     // MARK: - Functions: UIViewController
@@ -43,6 +42,7 @@ class MainViewController: UIViewController, MainViewDecorator {
     }
 }
 
+let playerChangeNotification = Notification.Name("numberOfPlayersChanged")
 
 protocol MainViewDecorator { }
 
@@ -58,6 +58,6 @@ extension MainViewDecorator where Self: MainViewController {
         self.numberOfPlayersStepper.minimumValue = 0
         self.numberOfPlayersStepper.maximumValue = 12
         
-        self.numberOfPlayersStepper.value = self.numberOfPlayers
+        self.numberOfPlayersStepper.value = Double(exactly: self.numberOfPlayers) ?? 0.0
     }
 }
