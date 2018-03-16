@@ -20,7 +20,7 @@ class CharacterSheetVC: UIViewController, CharacterSheetDecorator, CharacterPort
 
     @IBOutlet weak var characterHealthField: UITextField! {
         didSet {
-            guard let str = characterHealthField.text, let health = Int(exactly: str) else { return }
+            guard let str = characterHealthField.text, let health = Int(str) else { return }
             current?.health = health
         }
     }
