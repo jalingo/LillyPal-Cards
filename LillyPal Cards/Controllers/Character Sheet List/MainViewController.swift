@@ -16,13 +16,12 @@ class MainViewController: UIViewController, MainViewDecorator {
     
     var players = [LillyPal]() {
         didSet {
-            NotificationCenter.default.post(name: playerChangeNotification, object: numberOfPlayers)
-            numberOfPlayersField.text = "\(numberOfPlayers)"
+            NotificationCenter.default.post(name: playerChangeNotification, object: nil)
+            numberOfPlayersField.text = "\(players.count)"
+            numberOfPlayersStepper.value = Double(exactly: players.count) ?? 0.0
         }
     }
-    
-    var numberOfPlayers: Int { return players.count }
-    
+        
     // MARK: - Properties: IBOutlets
     
     @IBOutlet weak var numberOfPlayersField: UITextField!
@@ -37,7 +36,7 @@ class MainViewController: UIViewController, MainViewDecorator {
         let total = Int(exactly: sender.value) ?? 0
 
         let count: Int
-        count = total - numberOfPlayers
+        count = total - players.count
 
         guard count != 0 else { players = []; return }
         
@@ -57,7 +56,7 @@ class MainViewController: UIViewController, MainViewDecorator {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-print(" begining prep")
+print(" begining prep \(segue.destination.description)")
         if let controller = segue.destination as? CharacterSheetVC {
 print(" prep is where expected")
         }

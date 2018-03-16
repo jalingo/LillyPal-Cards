@@ -142,7 +142,6 @@
 			children = (
 				A194F12B205C371800BEDAA0 /* MainViewDecorator.swift */,
 				A194F130205C37F400BEDAA0 /* ParentHasDataModel.swift */,
-				A194F133205C383600BEDAA0 /* CardDeck Datasource:Delegate.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -151,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				A1B365FE205A4081009698B0 /* CardDeckTV.swift */,
+				A194F133205C383600BEDAA0 /* CardDeck Datasource:Delegate.swift */,
 				A194F136205C474000BEDAA0 /* LillyPalCardTVC.swift */,
 			);
 			path = "Contained TableView";

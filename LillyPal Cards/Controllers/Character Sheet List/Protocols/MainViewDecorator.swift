@@ -22,6 +22,6 @@ extension MainViewDecorator where Self: MainViewController {
         self.numberOfPlayersStepper.minimumValue = 0
         self.numberOfPlayersStepper.maximumValue = 12
         
-        self.numberOfPlayersStepper.value = Double(exactly: self.numberOfPlayers) ?? 0.0
+        self.numberOfPlayersStepper.value = Double(exactly: self.players.count) ?? 0.0
     }
 }
