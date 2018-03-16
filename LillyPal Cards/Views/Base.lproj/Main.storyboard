@@ -338,6 +338,9 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="nameFieldEdited:" destination="K6V-Qx-9vQ" eventType="editingDidEnd" id="R8l-bT-Fdx"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Character Sheet" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XuT-o6-n7V">
                                 <rect key="frame" x="152" y="20" width="207" height="21"/>
@@ -360,6 +363,9 @@
                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="VEw-Cc-dhU">
                                 <rect key="frame" x="152" y="231" width="94" height="29"/>
                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="bodyStepperTapped:" destination="K6V-Qx-9vQ" eventType="valueChanged" id="RZ8-A8-USU"/>
+                                </connections>
                             </stepper>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mind" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wcL-Xn-Wgh">
                                 <rect key="frame" x="16" y="270" width="136" height="29"/>
@@ -376,6 +382,9 @@
                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="zsa-m9-esE">
                                 <rect key="frame" x="152" y="270" width="94" height="29"/>
                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="mindStepperTapped:" destination="K6V-Qx-9vQ" eventType="valueChanged" id="gdo-yM-kie"/>
+                                </connections>
                             </stepper>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Social" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LgF-J7-Xxg">
                                 <rect key="frame" x="16" y="308" width="136" height="29"/>
@@ -392,12 +401,18 @@
                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="v41-Bw-c4T">
                                 <rect key="frame" x="152" y="308" width="94" height="29"/>
                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="socialStepperTapped:" destination="K6V-Qx-9vQ" eventType="valueChanged" id="C6i-17-ZIf"/>
+                                </connections>
                             </stepper>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="so4-rS-RcW">
                                 <rect key="frame" x="14" y="156" width="347" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="29" id="MfK-At-MbC"/>
                                 </constraints>
+                                <connections>
+                                    <action selector="healthSliderAdjusted:" destination="K6V-Qx-9vQ" eventType="valueChanged" id="0F3-Bj-3Z1"/>
+                                </connections>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Health" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dQS-p2-i6k">
                                 <rect key="frame" x="16" y="193" width="230" height="30"/>
@@ -427,6 +442,9 @@
                                 </constraints>
                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="&lt; Prev"/>
+                                <connections>
+                                    <action selector="previousTapped:" destination="K6V-Qx-9vQ" eventType="touchUpInside" id="BJ8-gx-o9T"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Image" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="efY-YZ-26V">
                                 <rect key="frame" x="205" y="123" width="87" height="21"/>
@@ -443,6 +461,9 @@
                                 <state key="normal" title="Next &gt;">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="nextTapped:" destination="K6V-Qx-9vQ" eventType="touchUpInside" id="G77-uh-PRI"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.58287864919999999" green="0.85112339260000003" blue="0.89396923780000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -511,6 +532,7 @@
                         <outlet property="characterHealthField" destination="PUl-Xd-CaT" id="1TW-bA-Ncc"/>
                         <outlet property="characterMindField" destination="tMg-9i-dcx" id="fW5-6a-fop"/>
                         <outlet property="characterNameField" destination="dJi-5T-sNZ" id="Xpr-6B-vyi"/>
+                        <outlet property="characterPortrait" destination="fPd-je-DiF" id="2rp-qT-gNH"/>
                         <outlet property="characterSocialField" destination="wYs-c9-XgT" id="TMl-1c-sMW"/>
                     </connections>
                 </viewController>
