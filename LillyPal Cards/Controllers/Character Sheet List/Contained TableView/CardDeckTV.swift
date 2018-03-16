@@ -33,14 +33,14 @@ class CardDeckTVC: UITableViewController, ParentHasDataModel {
     override func numberOfSections(in tableView: UITableView) -> Int { return 1 }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if let parent = self.parent as? MainViewController { return parent.numberOfPlayers }
-        return 1
+        guard let parent = self.parent as? MainViewController else { return 0 }
+        return parent.players.count
     }
 
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-print(" prepare happened from TableViewController")
+print(" prep happened from TableViewController \(segue.destination)")
     }
 }

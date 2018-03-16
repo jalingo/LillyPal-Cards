@@ -37,5 +37,5 @@ struct LillyPal: Character {
     
     var health = 3
     
-    var portrait: UIImage
+    var portrait = UIImage()
 }

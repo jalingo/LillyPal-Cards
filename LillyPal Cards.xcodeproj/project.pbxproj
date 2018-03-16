@@ -21,6 +21,8 @@
 		A194F132205C37F400BEDAA0 /* ParentHasDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A194F130205C37F400BEDAA0 /* ParentHasDataModel.swift */; };
 		A194F134205C383600BEDAA0 /* CardDeck Datasource:Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A194F133205C383600BEDAA0 /* CardDeck Datasource:Delegate.swift */; };
 		A194F135205C383600BEDAA0 /* CardDeck Datasource:Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A194F133205C383600BEDAA0 /* CardDeck Datasource:Delegate.swift */; };
+		A194F137205C474000BEDAA0 /* LillyPalCardTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A194F136205C474000BEDAA0 /* LillyPalCardTVC.swift */; };
+		A194F138205C474000BEDAA0 /* LillyPalCardTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A194F136205C474000BEDAA0 /* LillyPalCardTVC.swift */; };
 		A1B365D1205A0665009698B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B365D0205A0665009698B0 /* AppDelegate.swift */; };
 		A1B365D3205A0665009698B0 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B365D2205A0665009698B0 /* MainViewController.swift */; };
 		A1B365D6205A0665009698B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1B365D4205A0665009698B0 /* Main.storyboard */; };
@@ -28,8 +30,8 @@
 		A1B365DB205A0665009698B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1B365D9205A0665009698B0 /* LaunchScreen.storyboard */; };
 		A1B365E6205A0665009698B0 /* LillyPal_CardsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B365E5205A0665009698B0 /* LillyPal_CardsTests.swift */; };
 		A1B365F1205A0665009698B0 /* LillyPal_CardsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B365F0205A0665009698B0 /* LillyPal_CardsUITests.swift */; };
-		A1B365FF205A4081009698B0 /* CardDeckTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B365FE205A4081009698B0 /* CardDeckTVC.swift */; };
-		A1B36600205A4081009698B0 /* CardDeckTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B365FE205A4081009698B0 /* CardDeckTVC.swift */; };
+		A1B365FF205A4081009698B0 /* CardDeckTV.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B365FE205A4081009698B0 /* CardDeckTV.swift */; };
+		A1B36600205A4081009698B0 /* CardDeckTV.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B365FE205A4081009698B0 /* CardDeckTV.swift */; };
 		A1B36602205A4156009698B0 /* NavBarNC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B36601205A4156009698B0 /* NavBarNC.swift */; };
 		A1B36603205A4156009698B0 /* NavBarNC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B36601205A4156009698B0 /* NavBarNC.swift */; };
 		A1B36608205A438F009698B0 /* CharacterSheetVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B36607205A438F009698B0 /* CharacterSheetVC.swift */; };
@@ -62,6 +64,7 @@
 		A194F12B205C371800BEDAA0 /* MainViewDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewDecorator.swift; sourceTree = "<group>"; };
 		A194F130205C37F400BEDAA0 /* ParentHasDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentHasDataModel.swift; sourceTree = "<group>"; };
 		A194F133205C383600BEDAA0 /* CardDeck Datasource:Delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CardDeck Datasource:Delegate.swift"; sourceTree = "<group>"; };
+		A194F136205C474000BEDAA0 /* LillyPalCardTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LillyPalCardTVC.swift; sourceTree = "<group>"; };
 		A1B365CD205A0665009698B0 /* LillyPal Cards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LillyPal Cards.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1B365D0205A0665009698B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A1B365D2205A0665009698B0 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -75,7 +78,7 @@
 		A1B365EC205A0665009698B0 /* LillyPal CardsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "LillyPal CardsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1B365F0205A0665009698B0 /* LillyPal_CardsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LillyPal_CardsUITests.swift; sourceTree = "<group>"; };
 		A1B365F2205A0665009698B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A1B365FE205A4081009698B0 /* CardDeckTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDeckTVC.swift; sourceTree = "<group>"; };
+		A1B365FE205A4081009698B0 /* CardDeckTV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDeckTV.swift; sourceTree = "<group>"; };
 		A1B36601205A4156009698B0 /* NavBarNC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBarNC.swift; sourceTree = "<group>"; };
 		A1B36607205A438F009698B0 /* CharacterSheetVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterSheetVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -128,7 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				A1B365D2205A0665009698B0 /* MainViewController.swift */,
-				A1B365FE205A4081009698B0 /* CardDeckTVC.swift */,
+				A194F139205C475600BEDAA0 /* Contained TableView */,
 				A194F12F205C37D300BEDAA0 /* Protocols */,
 			);
 			path = "Character Sheet List";
@@ -142,6 +145,15 @@
 				A194F133205C383600BEDAA0 /* CardDeck Datasource:Delegate.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		A194F139205C475600BEDAA0 /* Contained TableView */ = {
+			isa = PBXGroup;
+			children = (
+				A1B365FE205A4081009698B0 /* CardDeckTV.swift */,
+				A194F136205C474000BEDAA0 /* LillyPalCardTVC.swift */,
+			);
+			path = "Contained TableView";
 			sourceTree = "<group>";
 		};
 		A1B365C4205A0665009698B0 = {
@@ -359,7 +371,8 @@
 				A194F131205C37F400BEDAA0 /* ParentHasDataModel.swift in Sources */,
 				A1B36602205A4156009698B0 /* NavBarNC.swift in Sources */,
 				A194F134205C383600BEDAA0 /* CardDeck Datasource:Delegate.swift in Sources */,
-				A1B365FF205A4081009698B0 /* CardDeckTVC.swift in Sources */,
+				A194F137205C474000BEDAA0 /* LillyPalCardTVC.swift in Sources */,
+				A1B365FF205A4081009698B0 /* CardDeckTV.swift in Sources */,
 				A194F128205BCC7600BEDAA0 /* CharacterAttributeChanger.swift in Sources */,
 				A194F12C205C371800BEDAA0 /* MainViewDecorator.swift in Sources */,
 				A1B365D3205A0665009698B0 /* MainViewController.swift in Sources */,
@@ -378,7 +391,8 @@
 				A194F132205C37F400BEDAA0 /* ParentHasDataModel.swift in Sources */,
 				A1B36609205A438F009698B0 /* CharacterSheetVC.swift in Sources */,
 				A194F135205C383600BEDAA0 /* CardDeck Datasource:Delegate.swift in Sources */,
-				A1B36600205A4081009698B0 /* CardDeckTVC.swift in Sources */,
+				A194F138205C474000BEDAA0 /* LillyPalCardTVC.swift in Sources */,
+				A1B36600205A4081009698B0 /* CardDeckTV.swift in Sources */,
 				A194F129205BCC7600BEDAA0 /* CharacterAttributeChanger.swift in Sources */,
 				A194F12D205C371800BEDAA0 /* MainViewDecorator.swift in Sources */,
 				A1B36603205A4156009698B0 /* NavBarNC.swift in Sources */,

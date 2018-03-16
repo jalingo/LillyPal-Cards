@@ -14,12 +14,14 @@ class MainViewController: UIViewController, MainViewDecorator {
 
     // MARK: - Properties
     
-    var numberOfPlayers = 0 {
+    var players = [LillyPal]() {
         didSet {
             NotificationCenter.default.post(name: playerChangeNotification, object: numberOfPlayers)
             numberOfPlayersField.text = "\(numberOfPlayers)"
         }
     }
+    
+    var numberOfPlayers: Int { return players.count }
     
     // MARK: - Properties: IBOutlets
     
@@ -32,7 +34,18 @@ class MainViewController: UIViewController, MainViewDecorator {
     // MARK: - Functions: IBActions
     
     @IBAction func numberOfPlayersStepped(_ sender: UIStepper) {
-        self.numberOfPlayers = Int(exactly: sender.value) ?? 0
+        let total = Int(exactly: sender.value) ?? 0
+
+        let count: Int
+        count = total - numberOfPlayers
+
+        guard count != 0 else { players = []; return }
+        
+        if count > 0 {
+            for _ in 1...count { players.append(LillyPal()) }
+        } else {
+            for _ in 1...abs(count) { players.removeLast() }
+        }
     }
     
     // MARK: - Functions: UIViewController
@@ -44,6 +57,7 @@ class MainViewController: UIViewController, MainViewDecorator {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+print(" begining prep")
         if let controller = segue.destination as? CharacterSheetVC {
 print(" prep is where expected")
         }
