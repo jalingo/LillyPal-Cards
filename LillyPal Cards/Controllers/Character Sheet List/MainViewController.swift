@@ -8,6 +8,8 @@
 
 import UIKit
 
+let playerChangeNotification = Notification.Name("numberOfPlayersChanged")
+
 class MainViewController: UIViewController, MainViewDecorator {
 
     // MARK: - Properties
@@ -39,25 +41,5 @@ class MainViewController: UIViewController, MainViewDecorator {
         super.viewDidLoad()
 
         self.decorate()
-    }
-}
-
-let playerChangeNotification = Notification.Name("numberOfPlayersChanged")
-
-protocol MainViewDecorator { }
-
-extension MainViewDecorator where Self: MainViewController {
-    
-    func decorate() {
-        self.navigationController?.isNavigationBarHidden = true
-        configureStepper()
-    }
-    
-    fileprivate func configureStepper() {
-        self.numberOfPlayersStepper.stepValue = 1.0
-        self.numberOfPlayersStepper.minimumValue = 0
-        self.numberOfPlayersStepper.maximumValue = 12
-        
-        self.numberOfPlayersStepper.value = Double(exactly: self.numberOfPlayers) ?? 0.0
     }
 }

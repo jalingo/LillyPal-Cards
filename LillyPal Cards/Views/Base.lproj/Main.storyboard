@@ -529,11 +529,15 @@
                     </view>
                     <connections>
                         <outlet property="characterBodyField" destination="aUg-1j-Gcw" id="eQO-wW-GYy"/>
+                        <outlet property="characterBodyStepper" destination="VEw-Cc-dhU" id="Pfr-yV-eCm"/>
                         <outlet property="characterHealthField" destination="PUl-Xd-CaT" id="1TW-bA-Ncc"/>
+                        <outlet property="characterHealthSlider" destination="so4-rS-RcW" id="zIX-eg-pFk"/>
                         <outlet property="characterMindField" destination="tMg-9i-dcx" id="fW5-6a-fop"/>
+                        <outlet property="characterMindStepper" destination="zsa-m9-esE" id="A0e-gI-zhN"/>
                         <outlet property="characterNameField" destination="dJi-5T-sNZ" id="Xpr-6B-vyi"/>
                         <outlet property="characterPortrait" destination="fPd-je-DiF" id="2rp-qT-gNH"/>
                         <outlet property="characterSocialField" destination="wYs-c9-XgT" id="TMl-1c-sMW"/>
+                        <outlet property="characterSocialStepper" destination="v41-Bw-c4T" id="mfB-oS-H9j"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JW1-OU-5Wa" userLabel="First Responder" sceneMemberID="firstResponder"/>
