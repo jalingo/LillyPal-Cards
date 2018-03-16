@@ -24,12 +24,14 @@ extension CharacterSheetDecorator where Self: CharacterSheetVC {
     
     func decorateInputFields() {
         characterNameField.text = current?.name
-        
-        characterBodyField.text =   "\(String(describing: current?.body))"
-        characterMindField.text =   "\(String(describing: current?.mind))"
-        characterSocialField.text = "\(String(describing: current?.social))"
-        
-        characterHealthField.text = "\(String(describing: current?.health))"
+        decorateAttributeFields()
+        if let health = current?.health { characterHealthField.text = "\(health)" }
+    }
+    
+    func decorateAttributeFields() {
+        if let body = current?.body     { characterBodyField.text = "\(body)" }
+        if let mind = current?.mind     { characterMindField.text = "\(mind)" }
+        if let social = current?.social { characterSocialField.text = "\(social)" }
     }
     
     func configureSlider() {

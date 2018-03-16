@@ -12,4 +12,13 @@ protocol CharacterPortraitChanger { }
 
 extension CharacterPortraitChanger where Self: CharacterSheetVC {
     
+    // !!
+    func nextPortrait() -> UIImage {
+        return UIImage()
+    }
+    
+    // !!
+    func previousPortrait() -> UIImage {
+        return UIImage()
+    }
 }

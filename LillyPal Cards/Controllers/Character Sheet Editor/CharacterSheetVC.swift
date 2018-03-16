@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CharacterSheetVC: UIViewController, CharacterSheetDecorator {
+class CharacterSheetVC: UIViewController, CharacterSheetDecorator, CharacterPortraitChanger, CharacterAttributeChanger {
 
     // MARK: - Properties
 
@@ -40,19 +40,25 @@ class CharacterSheetVC: UIViewController, CharacterSheetDecorator {
     
     // MARK: - Functions: IBActions
     
-    @IBAction func previousTapped(_ sender: UIButton) { }
+    @IBAction func previousTapped(_ sender: UIButton) {
+        current?.portrait = previousPortrait()
+        setCurrentImage()
+    }
     
-    @IBAction func nextTapped(_ sender: UIButton) { }
+    @IBAction func nextTapped(_ sender: UIButton) {
+        current?.portrait = nextPortrait()
+        setCurrentImage()
+    }
     
-    @IBAction func nameFieldEdited(_ sender: UITextField) { }
+    @IBAction func nameFieldEdited(_ sender: UITextField) { current?.name = sender.text ?? "" }
     
-    @IBAction func healthSliderAdjusted(_ sender: UISlider) { }
+    @IBAction func healthSliderAdjusted(_ sender: UISlider) { characterHealthField.text = "\(sender.value)" }
     
-    @IBAction func bodyStepperTapped(_ sender: UIStepper) { }
+    @IBAction func bodyStepperTapped(_ sender: UIStepper) { change(attribute: .body, to: sender.value) }
     
-    @IBAction func mindStepperTapped(_ sender: UIStepper) { }
+    @IBAction func mindStepperTapped(_ sender: UIStepper) { change(attribute: .mind, to: sender.value) }
     
-    @IBAction func socialStepperTapped(_ sender: UIStepper) { }
+    @IBAction func socialStepperTapped(_ sender: UIStepper) { change(attribute: .social, to: sender.value) }
     
     // MARK: - Functions: UIViewController
     
@@ -60,5 +66,9 @@ class CharacterSheetVC: UIViewController, CharacterSheetDecorator {
         super.viewDidLoad()
 
         decorate()
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // !!
     }
 }

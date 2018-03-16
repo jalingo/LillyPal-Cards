@@ -13,6 +13,8 @@
 		A194F123205BC5B300BEDAA0 /* CharacterSheetDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A194F121205BC5B300BEDAA0 /* CharacterSheetDecorator.swift */; };
 		A194F125205BC69A00BEDAA0 /* CharacterPortraitChanger.swift in Sources */ = {isa = PBXBuildFile; fileRef = A194F124205BC69A00BEDAA0 /* CharacterPortraitChanger.swift */; };
 		A194F126205BC69A00BEDAA0 /* CharacterPortraitChanger.swift in Sources */ = {isa = PBXBuildFile; fileRef = A194F124205BC69A00BEDAA0 /* CharacterPortraitChanger.swift */; };
+		A194F128205BCC7600BEDAA0 /* CharacterAttributeChanger.swift in Sources */ = {isa = PBXBuildFile; fileRef = A194F127205BCC7600BEDAA0 /* CharacterAttributeChanger.swift */; };
+		A194F129205BCC7600BEDAA0 /* CharacterAttributeChanger.swift in Sources */ = {isa = PBXBuildFile; fileRef = A194F127205BCC7600BEDAA0 /* CharacterAttributeChanger.swift */; };
 		A1B365D1205A0665009698B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B365D0205A0665009698B0 /* AppDelegate.swift */; };
 		A1B365D3205A0665009698B0 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B365D2205A0665009698B0 /* MainViewController.swift */; };
 		A1B365D6205A0665009698B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1B365D4205A0665009698B0 /* Main.storyboard */; };
@@ -50,6 +52,7 @@
 		A194F11D205ADEEB00BEDAA0 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		A194F121205BC5B300BEDAA0 /* CharacterSheetDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterSheetDecorator.swift; sourceTree = "<group>"; };
 		A194F124205BC69A00BEDAA0 /* CharacterPortraitChanger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterPortraitChanger.swift; sourceTree = "<group>"; };
+		A194F127205BCC7600BEDAA0 /* CharacterAttributeChanger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterAttributeChanger.swift; sourceTree = "<group>"; };
 		A1B365CD205A0665009698B0 /* LillyPal Cards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LillyPal Cards.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1B365D0205A0665009698B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A1B365D2205A0665009698B0 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -97,10 +100,19 @@
 			isa = PBXGroup;
 			children = (
 				A1B36607205A438F009698B0 /* CharacterSheetVC.swift */,
-				A194F124205BC69A00BEDAA0 /* CharacterPortraitChanger.swift */,
-				A194F121205BC5B300BEDAA0 /* CharacterSheetDecorator.swift */,
+				A194F12A205BCD6900BEDAA0 /* Protocols */,
 			);
 			path = "Character Sheet Editor";
+			sourceTree = "<group>";
+		};
+		A194F12A205BCD6900BEDAA0 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				A194F124205BC69A00BEDAA0 /* CharacterPortraitChanger.swift */,
+				A194F121205BC5B300BEDAA0 /* CharacterSheetDecorator.swift */,
+				A194F127205BCC7600BEDAA0 /* CharacterAttributeChanger.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 		A1B365C4205A0665009698B0 = {
@@ -318,6 +330,7 @@
 			files = (
 				A1B36602205A4156009698B0 /* NavBarNC.swift in Sources */,
 				A1B365FF205A4081009698B0 /* CardDeckTVC.swift in Sources */,
+				A194F128205BCC7600BEDAA0 /* CharacterAttributeChanger.swift in Sources */,
 				A1B365D3205A0665009698B0 /* MainViewController.swift in Sources */,
 				A194F125205BC69A00BEDAA0 /* CharacterPortraitChanger.swift in Sources */,
 				A194F11E205ADEEB00BEDAA0 /* Character.swift in Sources */,
@@ -333,6 +346,7 @@
 			files = (
 				A1B36609205A438F009698B0 /* CharacterSheetVC.swift in Sources */,
 				A1B36600205A4081009698B0 /* CardDeckTVC.swift in Sources */,
+				A194F129205BCC7600BEDAA0 /* CharacterAttributeChanger.swift in Sources */,
 				A1B36603205A4156009698B0 /* NavBarNC.swift in Sources */,
 				A194F126205BC69A00BEDAA0 /* CharacterPortraitChanger.swift in Sources */,
 				A194F11F205ADEEB00BEDAA0 /* Character.swift in Sources */,
