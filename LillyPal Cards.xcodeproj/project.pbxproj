@@ -207,9 +207,9 @@
 		A1B36605205A4176009698B0 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				A1B36601205A4156009698B0 /* NavBarNC.swift */,
 				A194F12E205C376B00BEDAA0 /* Character Sheet List */,
 				A194F120205BC57300BEDAA0 /* Character Sheet Editor */,
-				A1B36601205A4156009698B0 /* NavBarNC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";

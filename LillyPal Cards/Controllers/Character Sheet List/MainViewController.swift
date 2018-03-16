@@ -42,4 +42,10 @@ class MainViewController: UIViewController, MainViewDecorator {
 
         self.decorate()
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let controller = segue.destination as? CharacterSheetVC {
+print(" prep is where expected")
+        }
+    }
 }

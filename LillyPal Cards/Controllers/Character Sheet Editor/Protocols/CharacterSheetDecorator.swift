@@ -35,11 +35,12 @@ extension CharacterSheetDecorator where Self: CharacterSheetVC {
     }
     
     func configureSlider() {
-        guard let health = current?.health else { return }
+        guard let current = current else { return }
+        let maxHealth = current.mind + current.body + current.social
         
         characterHealthSlider.minimumValue = 0
-        characterHealthSlider.maximumValue = Float(health)
-        characterHealthSlider.value = Float(health)
+        characterHealthSlider.maximumValue = Float(maxHealth)
+        characterHealthSlider.value = Float(current.health)
     }
     
     func configureSteppers() {

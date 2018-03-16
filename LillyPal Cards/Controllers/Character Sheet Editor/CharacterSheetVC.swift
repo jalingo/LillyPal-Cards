@@ -18,7 +18,12 @@ class CharacterSheetVC: UIViewController, CharacterSheetDecorator, CharacterPort
 
     @IBOutlet weak var characterNameField: UITextField!
 
-    @IBOutlet weak var characterHealthField: UITextField!
+    @IBOutlet weak var characterHealthField: UITextField! {
+        didSet {
+            guard let str = characterHealthField.text, let health = Int(exactly: str) else { return }
+            current?.health = health
+        }
+    }
     
     @IBOutlet weak var characterBodyField: UITextField!
     
@@ -69,6 +74,6 @@ class CharacterSheetVC: UIViewController, CharacterSheetDecorator, CharacterPort
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // !!
+print(" prep triggered from character sheet editor")
     }
 }

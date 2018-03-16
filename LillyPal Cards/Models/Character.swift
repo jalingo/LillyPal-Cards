@@ -8,6 +8,8 @@
 
 import UIKit
 
+enum CharacterAttribute { case body, mind, social }
+
 protocol Character {
     
     var name: String { get set }
@@ -23,10 +25,17 @@ protocol Character {
     var portrait: UIImage { get set }
 }
 
-extension Character {
+struct LillyPal: Character {
     
-}
-
-enum CharacterAttribute {
-    case body, mind, social
+    var name = "Default Name"
+    
+    var body = 1
+    
+    var mind = 1
+    
+    var social = 1
+    
+    var health = 3
+    
+    var portrait: UIImage
 }
