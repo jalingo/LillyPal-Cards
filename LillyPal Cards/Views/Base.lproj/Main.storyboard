@@ -119,16 +119,16 @@
         <scene sceneID="zHI-iz-eWs">
             <objects>
                 <tableViewController id="oW2-wE-Wl0" customClass="CardDeckTVC" customModule="LillyPal_Cards" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="210" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="bJ7-9c-Vc9">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="210" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="bJ7-9c-Vc9">
                         <rect key="frame" x="0.0" y="0.0" width="343" height="438"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="LillyPal_Cell" rowHeight="210" id="KZn-xr-5bp" customClass="LillyPalCardTVC" customModule="LillyPal_Cards" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="343" height="210"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.75" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="KZn-xr-5bp" id="uZn-ie-NC6">
-                                    <rect key="frame" x="0.0" y="0.0" width="343" height="209.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="343" height="210"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p98-mb-gcr">
@@ -138,6 +138,7 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="97" height="97"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="ftf-6r-b8a" secondAttribute="height" multiplier="1:1" id="0Kn-a4-s8b"/>
+                                                        <constraint firstAttribute="height" constant="97" id="jDG-tO-vDT"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Character Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qXy-ed-ADl">

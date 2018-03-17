@@ -12,7 +12,9 @@ class LillyPalCardTVC: UITableViewCell, LillyPalCalculator {
 
     // MARK: - Properties
 
-    var current: Character?
+    var current: Character? {
+        didSet { calculateStats() }
+    }
     
     // MARK: - Properties: IBOutlets
     
@@ -45,8 +47,7 @@ class LillyPalCardTVC: UITableViewCell, LillyPalCalculator {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-
-        calculateStats()
+        
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
