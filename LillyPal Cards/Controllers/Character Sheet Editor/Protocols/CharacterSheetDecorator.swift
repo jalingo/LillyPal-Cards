@@ -40,7 +40,7 @@ extension CharacterSheetDecorator where Self: CharacterSheetVC {
         
         characterHealthSlider.minimumValue = 0
         characterHealthSlider.maximumValue = Float(maxHealth)
-        characterHealthSlider.value = Float(current.health)
+        characterHealthSlider.setValue(Float(current.health), animated: true)
     }
     
     func configureSteppers() {
