@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LillyPalCardTVC: UITableViewCell, LillyPalCalculator {
+class LillyPalCardTVC: UITableViewCell, LillyPalCardDecorator {
 
     // MARK: - Properties
 
