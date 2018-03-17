@@ -41,6 +41,8 @@
 		A1BC6244205CEE9600884829 /* ParentCanTriggerEdits.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BC6242205CEE9500884829 /* ParentCanTriggerEdits.swift */; };
 		A1BC6246205CEF2B00884829 /* LillyPal.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BC6245205CEF2B00884829 /* LillyPal.swift */; };
 		A1BC6247205CEF2B00884829 /* LillyPal.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BC6245205CEF2B00884829 /* LillyPal.swift */; };
+		A1BC6249205CEFC700884829 /* LillyPalCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BC6248205CEFC700884829 /* LillyPalCalculator.swift */; };
+		A1BC624A205CEFC700884829 /* LillyPalCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BC6248205CEFC700884829 /* LillyPalCalculator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +89,7 @@
 		A1B36607205A438F009698B0 /* CharacterSheetVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterSheetVC.swift; sourceTree = "<group>"; };
 		A1BC6242205CEE9500884829 /* ParentCanTriggerEdits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentCanTriggerEdits.swift; sourceTree = "<group>"; };
 		A1BC6245205CEF2B00884829 /* LillyPal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LillyPal.swift; sourceTree = "<group>"; };
+		A1BC6248205CEFC700884829 /* LillyPalCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LillyPalCalculator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,8 +149,9 @@
 		A194F12F205C37D300BEDAA0 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				A194F133205C383600BEDAA0 /* CardDeck Datasource:Delegate.swift */,
+				A1BC6248205CEFC700884829 /* LillyPalCalculator.swift */,
 				A194F12B205C371800BEDAA0 /* MainViewDecorator.swift */,
+				A194F133205C383600BEDAA0 /* CardDeck Datasource:Delegate.swift */,
 				A194F130205C37F400BEDAA0 /* ParentHasDataModel.swift */,
 				A1BC6242205CEE9500884829 /* ParentCanTriggerEdits.swift */,
 			);
@@ -376,6 +380,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1BC6249205CEFC700884829 /* LillyPalCalculator.swift in Sources */,
 				A194F131205C37F400BEDAA0 /* ParentHasDataModel.swift in Sources */,
 				A1BC6243205CEE9500884829 /* ParentCanTriggerEdits.swift in Sources */,
 				A1B36602205A4156009698B0 /* NavBarNC.swift in Sources */,
@@ -398,6 +403,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1BC624A205CEFC700884829 /* LillyPalCalculator.swift in Sources */,
 				A194F132205C37F400BEDAA0 /* ParentHasDataModel.swift in Sources */,
 				A1BC6244205CEE9600884829 /* ParentCanTriggerEdits.swift in Sources */,
 				A1B36609205A438F009698B0 /* CharacterSheetVC.swift in Sources */,
