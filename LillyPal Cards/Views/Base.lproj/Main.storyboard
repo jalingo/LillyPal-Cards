@@ -459,6 +459,7 @@
                                 <rect key="frame" x="16" y="64" width="128" height="128"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="fPd-je-DiF" secondAttribute="height" multiplier="1:1" id="IUD-pd-Rbc"/>
+                                    <constraint firstAttribute="height" constant="128" id="lG8-XH-bdG"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JTs-XP-U0Y">
