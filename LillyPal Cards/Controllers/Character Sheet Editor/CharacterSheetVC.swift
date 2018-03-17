@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CharacterSheetVC: UIViewController, CharacterSheetDecorator, CharacterPortraitChanger, CharacterAttributeChanger {
+class CharacterSheetVC: UIViewController, CharacterSheetDecorator, CharacterPortraitChanger, CharacterAttributeChanger, SpacesAfterDecimalCounter, FloatRounder {
 
     // MARK: - Properties
 
@@ -18,12 +18,7 @@ class CharacterSheetVC: UIViewController, CharacterSheetDecorator, CharacterPort
 
     @IBOutlet weak var characterNameField: UITextField!
 
-    @IBOutlet weak var characterHealthField: UITextField! {
-        didSet {
-            guard let str = characterHealthField.text, let health = Int(str) else { return }
-            current?.health = health
-        }
-    }
+    @IBOutlet weak var characterHealthField: UITextField!
     
     @IBOutlet weak var characterBodyField: UITextField!
     
@@ -39,7 +34,7 @@ class CharacterSheetVC: UIViewController, CharacterSheetDecorator, CharacterPort
     
     @IBOutlet weak var characterSocialStepper: UIStepper!
     
-    @IBOutlet weak var characterHealthSlider: UISlider!
+    @IBOutlet weak var characterHealthSlider: UISlider! 
     
     // MARK: - Functions
     
@@ -57,7 +52,13 @@ class CharacterSheetVC: UIViewController, CharacterSheetDecorator, CharacterPort
     
     @IBAction func nameFieldEdited(_ sender: UITextField) { current?.name = sender.text ?? "" }
     
-    @IBAction func healthSliderAdjusted(_ sender: UISlider) { characterHealthField.text = "\(sender.value)" }
+    @IBAction func healthSliderAdjusted(_ sender: UISlider) {
+        guard let current = current,
+            let roundedValue = Int(exactly: round(off: sender.value, toPlace: 0)) else { return }
+        
+        characterHealthField.text = "\(roundedValue) / \(current.maxHealth)"
+        self.current?.health = roundedValue
+    }
     
     @IBAction func bodyStepperTapped(_ sender: UIStepper) { change(attribute: .body, to: sender.value) }
     
@@ -73,7 +74,12 @@ class CharacterSheetVC: UIViewController, CharacterSheetDecorator, CharacterPort
         decorate()
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-print(" prep triggered from character sheet editor")
+    override func viewWillDisappear(_ animated: Bool) {
+        guard let pal = current as? LillyPal,
+            let index = self.navigationController?.viewControllers.index(where: { $0 is MainViewController }),
+            let controller = self.navigationController?.viewControllers[index] as? MainViewController,
+            let selectedIndex = controller.selectedIndex else { return }
+        
+        controller.players[selectedIndex] = pal
     }
 }
