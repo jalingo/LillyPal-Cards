@@ -10,7 +10,7 @@ import UIKit
 
 struct LillyPal: Character {
     
-    var name = "Default Name"
+    var name = Defaults.characterName
     
     var body = 1
     

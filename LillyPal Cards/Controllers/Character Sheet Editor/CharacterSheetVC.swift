@@ -52,7 +52,7 @@ class CharacterSheetVC: UIViewController, CharacterSheetDecorator, CharacterPort
         setCurrentImage()
     }
     
-    @IBAction func nameFieldEdited(_ sender: UITextField) { current?.name = sender.text ?? "" }
+    @IBAction func nameFieldEdited(_ sender: UITextField) { current?.name = sender.text ?? Defaults.characterName }
     
     @IBAction func healthSliderAdjusted(_ sender: UISlider) {
         guard let current = current,
@@ -84,7 +84,9 @@ class CharacterSheetVC: UIViewController, CharacterSheetDecorator, CharacterPort
             let selectedIndex = controller.selectedIndex else { return }
 
         // This restores health if max health changed.
-        if let max = originalState?.maxHealth, pal.maxHealth > max { pal.health = pal.maxHealth }
+        if let max = originalState?.maxHealth {
+            if pal.maxHealth > max || pal.health > pal.maxHealth { pal.health = pal.maxHealth }         // <-- Resets health when max changed, and prevents health exceeding max health. !!
+        }
         
         // This passes data model changes back to main view.
         controller.players[selectedIndex] = pal

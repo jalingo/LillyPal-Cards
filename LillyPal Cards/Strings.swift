@@ -14,3 +14,8 @@ struct StoryBoardIdentifier {
     
     static let segueToCharacterEditor = "toCharacterSheet"
 }
+
+struct Defaults {
+    
+    static let characterName = "Default Name"
+}
