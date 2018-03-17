@@ -21,6 +21,6 @@ extension CharacterAttributeChanger where Self: CharacterSheetVC {
         case .social: current?.social = value
         }
         
-        decorateAttributeFields()
+        decorate()
     }
 }
