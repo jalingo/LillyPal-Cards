@@ -316,13 +316,13 @@
                                             </constraints>
                                         </view>
                                     </subviews>
-                                    <color key="backgroundColor" red="0.67000000000000004" green="0.67000000000000004" blue="0.67000000000000004" alpha="1" colorSpace="calibratedRGB"/>
                                     <constraints>
                                         <constraint firstItem="p98-mb-gcr" firstAttribute="leading" secondItem="uZn-ie-NC6" secondAttribute="leading" constant="9" id="Idz-ka-G4h"/>
                                         <constraint firstAttribute="trailing" secondItem="p98-mb-gcr" secondAttribute="trailing" constant="9" id="TBm-5t-g1Y"/>
                                         <constraint firstItem="p98-mb-gcr" firstAttribute="centerY" secondItem="uZn-ie-NC6" secondAttribute="centerY" id="XzT-0y-3uA"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.58287864919999999" green="0.85112339260000003" blue="0.89396923780000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <outlet property="charBodyLabel" destination="PFA-Bz-Vu6" id="gCW-WT-Uie"/>
                                     <outlet property="charCharismaLabel" destination="fRu-xz-F2g" id="tRr-ea-qzN"/>
