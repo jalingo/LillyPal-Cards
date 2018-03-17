@@ -91,3 +91,11 @@ class CharacterSheetVC: UIViewController, CharacterSheetDecorator, CharacterPort
 extension CharacterSheetVC: FirstResponderResigner {
     var responders: [UIResponder] { return [characterNameField] }
 }
+
+extension CharacterSheetVC: UITextFieldDelegate {
+
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+}
