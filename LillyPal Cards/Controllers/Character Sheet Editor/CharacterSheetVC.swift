@@ -84,7 +84,7 @@ class CharacterSheetVC: UIViewController, CharacterSheetDecorator, CharacterPort
             let selectedIndex = controller.selectedIndex else { return }
 
         // This restores health if max health changed.
-        if let max = originalState?.maxHealth, pal.maxHealth > max { pal.health = max }
+        if let max = originalState?.maxHealth, pal.maxHealth > max { pal.health = pal.maxHealth }
         
         // This passes data model changes back to main view.
         controller.players[selectedIndex] = pal
