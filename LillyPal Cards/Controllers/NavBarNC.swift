@@ -15,8 +15,4 @@ class NavBarNC: UINavigationController {
 
         // Do any additional setup after loading the view.
     }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-print(" prep @ navBar \(segue.destination.description)")
-    }
 }
