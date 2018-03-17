@@ -12,7 +12,7 @@ let playerChangeNotification = Notification.Name("numberOfPlayersChanged")
 
 protocol ParentHasDataModel { }
 
-extension ParentHasDataModel where Self: CardDeckTVC {
+extension ParentHasDataModel where Self: CardDeckTV {
     
     // !!
     func listenForDataModelChanges() {
