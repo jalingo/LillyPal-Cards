@@ -12,12 +12,15 @@ import UIKit
 
 extension CardDeckTVC {
     
+    // MARK: - TableViewDelegate
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "LillyPal_Cell", for: indexPath)
-        
+
+        let index = indexPath.row
         if let cell = cell as? LillyPalCardTVC,
             let parent = parent as? MainViewController
-            { cell.current = parent.players[indexPath.row] }
+            { cell.current = parent.players[index] }
         
         return cell
     }
@@ -38,5 +41,16 @@ extension CardDeckTVC {
     
     override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
         if let parent = self.parent as? MainViewController { parent.players.swapAt(fromIndexPath.row, to.row) }
+    }
+    
+    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool { return true }
+    
+    // MARK: - TableViewDataSource
+    
+    override func numberOfSections(in tableView: UITableView) -> Int { return 1 }
+    
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        guard let parent = self.parent as? MainViewController else { return 0 }
+        return parent.players.count
     }
 }

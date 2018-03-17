@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CardDeckTVC: UITableViewController, ParentHasDataModel {
+class CardDeckTVC: UITableViewController, ParentHasDataModel, ParentCanTriggerEdits {
 
     // MARK: - Properties
     
@@ -20,21 +20,7 @@ class CardDeckTVC: UITableViewController, ParentHasDataModel {
         super.viewDidLoad()
 
         listenForDataModelChanges()
-        
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
-    }
-
-    // MARK: - Table view data source
-
-    override func numberOfSections(in tableView: UITableView) -> Int { return 1 }
-
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        guard let parent = self.parent as? MainViewController else { return 0 }
-        return parent.players.count
+        listenForEditButtonTapped()
     }
 
     // MARK: - Navigation
@@ -42,5 +28,18 @@ class CardDeckTVC: UITableViewController, ParentHasDataModel {
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
 print(" prep happened from TableViewController \(segue.destination)")
+    }
+}
+
+let playerChangeNotification = Notification.Name("numberOfPlayersChanged")
+let playerListEditNotification = Notification.Name("editButtonTapped")
+
+protocol ParentCanTriggerEdits { }
+
+extension ParentCanTriggerEdits where Self: UITableViewController {
+    func listenForEditButtonTapped() {
+        NotificationCenter.default.addObserver(forName: playerListEditNotification, object: nil, queue: nil) { _ in
+            self.isEditing = !self.isEditing
+        }
     }
 }

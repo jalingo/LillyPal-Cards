@@ -8,8 +8,6 @@
 
 import UIKit
 
-let playerChangeNotification = Notification.Name("numberOfPlayersChanged")
-
 class MainViewController: UIViewController, MainViewDecorator {
 
     // MARK: - Properties
@@ -28,9 +26,15 @@ class MainViewController: UIViewController, MainViewDecorator {
 
     @IBOutlet weak var numberOfPlayersStepper: UIStepper!
     
+    @IBOutlet weak var listOfPlayersView: UIView!
+    
     // MARK: - Functions
 
     // MARK: - Functions: IBActions
+    
+    @IBAction func editButtonTapped(_ sender: UIButton) {
+        NotificationCenter.default.post(name: playerListEditNotification, object: nil)
+    }
     
     @IBAction func numberOfPlayersStepped(_ sender: UIStepper) {
         let total = Int(exactly: sender.value) ?? 0
