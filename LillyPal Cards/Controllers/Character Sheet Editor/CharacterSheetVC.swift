@@ -14,6 +14,8 @@ class CharacterSheetVC: UIViewController, CharacterSheetDecorator, CharacterPort
 
     var current: Character?
     
+    var originalState: Character?
+    
     // MARK: - Properties: IBOutlets
 
     @IBOutlet weak var characterNameField: UITextField!
@@ -71,13 +73,18 @@ class CharacterSheetVC: UIViewController, CharacterSheetDecorator, CharacterPort
     override func viewDidLoad() {
         super.viewDidLoad()
         decorate()
+        
+        originalState = current
     }
     
     override func viewWillDisappear(_ animated: Bool) {
-        guard let pal = current as? LillyPal,
+        guard var pal = current as? LillyPal,
             let index = self.navigationController?.viewControllers.index(where: { $0 is MainViewController }),
             let controller = self.navigationController?.viewControllers[index] as? MainViewController,
             let selectedIndex = controller.selectedIndex else { return }
+
+        // This restores health if max health changed.
+        if let max = originalState?.maxHealth, pal.maxHealth > max { pal.health = max }
         
         // This passes data model changes back to main view.
         controller.players[selectedIndex] = pal
