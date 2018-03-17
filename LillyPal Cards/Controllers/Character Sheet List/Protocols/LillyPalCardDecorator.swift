@@ -8,9 +8,9 @@
 
 import Foundation
 
-protocol LillyPalCalculator { }
+protocol LillyPalCardDecorator { }
 
-extension LillyPalCalculator where Self: LillyPalCardTVC {
+extension LillyPalCardDecorator where Self: LillyPalCardTVC {
     
     func calculateStats() {
         charName.text = current?.name
@@ -22,13 +22,13 @@ extension LillyPalCalculator where Self: LillyPalCardTVC {
         charMindLabel.text = "\(current.mind)"
         charSocialLabel.text = "\(current.social)"
         
-        charStrengthLabel.text = "\(current.body + current.body)"
-        charIntelligenceLabel.text = "\(current.mind + current.mind)"
-        charCharismaLabel.text = "\(current.social + current.social)"
+        charStrengthLabel.text = "\(current.strength)"
+        charIntelligenceLabel.text = "\(current.intelligence)"
+        charCharismaLabel.text = "\(current.charisma)"
         
-        charPerceptionLabel.text = "\(current.mind + current.social)"
-        charReactionLabel.text = "\(current.body + current.mind)"
+        charPerceptionLabel.text = "\(current.perception)"
+        charReactionLabel.text = "\(current.reaction)"
         
-        charHealthLabel.text = "\(current.health) / \(current.body + current.mind + current.social)"
+        charHealthLabel.text = "\(current.health) / \(current.maxHealth)"
     }
 }

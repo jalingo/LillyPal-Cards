@@ -24,3 +24,18 @@ protocol Character {
     
     var portrait: UIImage { get set }
 }
+
+extension Character {
+    
+    var maxHealth: Int { return mind + body + social }
+    
+    var strength: Int { return body + body }
+    
+    var intelligence: Int { return mind + mind }
+    
+    var charisma: Int { return social + social }
+    
+    var perception: Int { return mind + social }
+    
+    var reaction: Int { return body + mind }
+}
