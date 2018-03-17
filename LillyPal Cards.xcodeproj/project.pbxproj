@@ -149,8 +149,8 @@
 		A194F12F205C37D300BEDAA0 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				A1BC6248205CEFC700884829 /* LillyPalCalculator.swift */,
 				A194F12B205C371800BEDAA0 /* MainViewDecorator.swift */,
+				A1BC6248205CEFC700884829 /* LillyPalCalculator.swift */,
 				A194F133205C383600BEDAA0 /* CardDeck Datasource:Delegate.swift */,
 				A194F130205C37F400BEDAA0 /* ParentHasDataModel.swift */,
 				A1BC6242205CEE9500884829 /* ParentCanTriggerEdits.swift */,

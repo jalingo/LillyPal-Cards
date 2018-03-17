@@ -19,7 +19,9 @@ class MainViewController: UIViewController, MainViewDecorator {
             numberOfPlayersStepper.value = Double(exactly: players.count) ?? 0.0
         }
     }
-        
+    
+    var selectedIndex: Int?
+    
     // MARK: - Properties: IBOutlets
     
     @IBOutlet weak var numberOfPlayersField: UITextField!
@@ -60,9 +62,6 @@ class MainViewController: UIViewController, MainViewDecorator {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-print(" begining prep \(segue.destination.description)")
-        if let controller = segue.destination as? CharacterSheetVC {
-print(" prep is where expected")
-        }
+        if let controller = segue.destination as? CharacterSheetVC, let index = selectedIndex { controller.current = players[index] }
     }
 }

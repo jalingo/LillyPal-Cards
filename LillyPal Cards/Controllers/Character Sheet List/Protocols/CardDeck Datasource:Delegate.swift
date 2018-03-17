@@ -26,7 +26,10 @@ extension CardDeckTVC {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        self.parent?.performSegue(withIdentifier: "toCharacterSheet", sender: self)
+        guard let parent = self.parent as? MainViewController else { return }
+        
+        parent.selectedIndex = indexPath.row
+        parent.performSegue(withIdentifier: "toCharacterSheet", sender: self)
     }
     
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool { return true }
