@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CardDeckTVC: UITableViewController, ParentHasDataModel, ParentCanTriggerEdits {
+class CardDeckTV: UITableViewController, ParentHasDataModel, ParentCanTriggerEdits {
 
     // MARK: - Properties
     

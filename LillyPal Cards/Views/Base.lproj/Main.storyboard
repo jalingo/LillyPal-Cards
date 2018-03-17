@@ -115,10 +115,10 @@
             </objects>
             <point key="canvasLocation" x="-676" y="134"/>
         </scene>
-        <!--Card DeckTVC-->
+        <!--Card DeckTV-->
         <scene sceneID="zHI-iz-eWs">
             <objects>
-                <tableViewController id="oW2-wE-Wl0" customClass="CardDeckTVC" customModule="LillyPal_Cards" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="oW2-wE-Wl0" customClass="CardDeckTV" customModule="LillyPal_Cards" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="210" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="bJ7-9c-Vc9">
                         <rect key="frame" x="0.0" y="0.0" width="343" height="438"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

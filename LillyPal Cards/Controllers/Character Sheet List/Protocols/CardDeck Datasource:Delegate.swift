@@ -10,7 +10,7 @@ import UIKit
 
 // MARK: - Extensions
 
-extension CardDeckTVC {
+extension CardDeckTV {
     
     // MARK: - TableViewDelegate
     
@@ -60,7 +60,7 @@ print(" parent found @ didSelectRow #\(indexPath.row)")
     }
 }
 
-extension CardDeckTVC {
+extension CardDeckTV {
     
     // !!
     func lillyPalCardWide(for path: IndexPath) -> UITableViewCell {
