@@ -15,7 +15,7 @@ extension CardDeckTVC {
     // MARK: - TableViewDelegate
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "LillyPal_Cell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: StoryBoardIdentifier.lillyPalCell, for: indexPath)
 
         let index = indexPath.row
         if let cell = cell as? LillyPalCardTVC,
@@ -29,7 +29,7 @@ extension CardDeckTVC {
         guard let parent = self.parent as? MainViewController else { return }
         
         parent.selectedIndex = indexPath.row
-        parent.performSegue(withIdentifier: "toCharacterSheet", sender: self)
+        parent.performSegue(withIdentifier: StoryBoardIdentifier.segueToCharacterEditor, sender: self)
     }
     
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool { return true }

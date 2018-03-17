@@ -49,6 +49,8 @@
 		A1BC6250205D068500884829 /* SpacesAfterDecimalCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BC624E205D068500884829 /* SpacesAfterDecimalCounter.swift */; };
 		A1BC6252205D23F700884829 /* FirstResponderResigner.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BC6251205D23F700884829 /* FirstResponderResigner.swift */; };
 		A1BC6253205D23F700884829 /* FirstResponderResigner.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BC6251205D23F700884829 /* FirstResponderResigner.swift */; };
+		A1BC6255205D2C4A00884829 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BC6254205D2C4A00884829 /* Strings.swift */; };
+		A1BC6256205D2C4A00884829 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BC6254205D2C4A00884829 /* Strings.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +101,7 @@
 		A1BC624B205D05CB00884829 /* FloatRounder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatRounder.swift; sourceTree = "<group>"; };
 		A1BC624E205D068500884829 /* SpacesAfterDecimalCounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpacesAfterDecimalCounter.swift; sourceTree = "<group>"; };
 		A1BC6251205D23F700884829 /* FirstResponderResigner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstResponderResigner.swift; sourceTree = "<group>"; };
+		A1BC6254205D2C4A00884829 /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -202,6 +205,7 @@
 		A1B365CF205A0665009698B0 /* LillyPal Cards */ = {
 			isa = PBXGroup;
 			children = (
+				A1BC6254205D2C4A00884829 /* Strings.swift */,
 				A1B365D0205A0665009698B0 /* AppDelegate.swift */,
 				A1B36606205A4187009698B0 /* Models */,
 				A1B36604205A4165009698B0 /* Views */,
@@ -394,6 +398,7 @@
 			files = (
 				A1BC6249205CEFC700884829 /* LillyPalCardDecorator.swift in Sources */,
 				A194F131205C37F400BEDAA0 /* ParentHasDataModel.swift in Sources */,
+				A1BC6255205D2C4A00884829 /* Strings.swift in Sources */,
 				A1BC6243205CEE9500884829 /* ParentCanTriggerEdits.swift in Sources */,
 				A1BC6252205D23F700884829 /* FirstResponderResigner.swift in Sources */,
 				A1B36602205A4156009698B0 /* NavBarNC.swift in Sources */,
@@ -420,6 +425,7 @@
 			files = (
 				A1BC624A205CEFC700884829 /* LillyPalCardDecorator.swift in Sources */,
 				A194F132205C37F400BEDAA0 /* ParentHasDataModel.swift in Sources */,
+				A1BC6256205D2C4A00884829 /* Strings.swift in Sources */,
 				A1BC6244205CEE9600884829 /* ParentCanTriggerEdits.swift in Sources */,
 				A1BC6253205D23F700884829 /* FirstResponderResigner.swift in Sources */,
 				A1B36609205A438F009698B0 /* CharacterSheetVC.swift in Sources */,
