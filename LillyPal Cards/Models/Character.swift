@@ -24,18 +24,3 @@ protocol Character {
     
     var portrait: UIImage { get set }
 }
-
-struct LillyPal: Character {
-    
-    var name = "Default Name"
-    
-    var body = 1
-    
-    var mind = 1
-    
-    var social = 1
-    
-    var health = 3
-    
-    var portrait = #imageLiteral(resourceName: "cool_kitty_cat")
-}
