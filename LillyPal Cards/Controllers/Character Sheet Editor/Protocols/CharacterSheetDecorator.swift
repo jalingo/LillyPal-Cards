@@ -25,7 +25,7 @@ extension CharacterSheetDecorator where Self: CharacterSheetVC {
     func decorateInputFields() {
         characterNameField.text = current?.name
         decorateAttributeFields()
-        if let health = current?.health { characterHealthField.text = "\(health)" }
+        if let health = current?.health, let max = current?.maxHealth { characterHealthField.text = "\(health) / \(max)" }
     }
     
     func decorateAttributeFields() {
