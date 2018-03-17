@@ -15,12 +15,14 @@ extension CardDeckTVC {
     // MARK: - TableViewDelegate
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: StoryBoardIdentifier.lillyPalCell, for: indexPath)
-
+        let cell: UITableViewCell
+        
+        self.isEditing ? (cell = lillyPalCardSlim(for: indexPath)) : (cell = lillyPalCardWide(for: indexPath))
+        
         let index = indexPath.row
         if let cell = cell as? LillyPalCardTVC,
             let parent = parent as? MainViewController
-            { cell.current = parent.players[index] }
+        { cell.current = parent.players[index] }
         
         return cell
     }
@@ -55,5 +57,25 @@ print(" parent found @ didSelectRow #\(indexPath.row)")
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         guard let parent = self.parent as? MainViewController else { return 0 }
         return parent.players.count
+    }
+}
+
+extension CardDeckTVC {
+    
+    // !!
+    func lillyPalCardWide(for path: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: StoryBoardIdentifier.lillyPalCell, for: path)
+        
+        let index = path.row
+        if let cell = cell as? LillyPalCardTVC,
+            let parent = parent as? MainViewController
+        { cell.current = parent.players[index] }
+        
+        return cell
+    }
+    
+    func lillyPalCardSlim(for path: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: StoryBoardIdentifier.lillyPalSlimCell, for: path)
+        return cell
     }
 }

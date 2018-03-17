@@ -51,6 +51,7 @@
 		A1BC6253205D23F700884829 /* FirstResponderResigner.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BC6251205D23F700884829 /* FirstResponderResigner.swift */; };
 		A1BC6255205D2C4A00884829 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BC6254205D2C4A00884829 /* Strings.swift */; };
 		A1BC6256205D2C4A00884829 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BC6254205D2C4A00884829 /* Strings.swift */; };
+		A1BC6258205DCA5700884829 /* LillyPalCardSlimTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BC6257205DCA5700884829 /* LillyPalCardSlimTVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,6 +103,7 @@
 		A1BC624E205D068500884829 /* SpacesAfterDecimalCounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpacesAfterDecimalCounter.swift; sourceTree = "<group>"; };
 		A1BC6251205D23F700884829 /* FirstResponderResigner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstResponderResigner.swift; sourceTree = "<group>"; };
 		A1BC6254205D2C4A00884829 /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		A1BC6257205DCA5700884829 /* LillyPalCardSlimTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LillyPalCardSlimTVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,6 +179,7 @@
 			isa = PBXGroup;
 			children = (
 				A1B365FE205A4081009698B0 /* CardDeckTV.swift */,
+				A1BC6257205DCA5700884829 /* LillyPalCardSlimTVC.swift */,
 				A194F136205C474000BEDAA0 /* LillyPalCardTVC.swift */,
 			);
 			path = "Contained TableView";
@@ -414,6 +417,7 @@
 				A194F125205BC69A00BEDAA0 /* CharacterPortraitChanger.swift in Sources */,
 				A194F11E205ADEEB00BEDAA0 /* Character.swift in Sources */,
 				A1B36608205A438F009698B0 /* CharacterSheetVC.swift in Sources */,
+				A1BC6258205DCA5700884829 /* LillyPalCardSlimTVC.swift in Sources */,
 				A194F122205BC5B300BEDAA0 /* CharacterSheetDecorator.swift in Sources */,
 				A1B365D1205A0665009698B0 /* AppDelegate.swift in Sources */,
 			);

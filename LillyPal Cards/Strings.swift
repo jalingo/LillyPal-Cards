@@ -12,6 +12,8 @@ struct StoryBoardIdentifier {
     // !!
     static let lillyPalCell = "LillyPal_Cell"
     
+    static let lillyPalSlimCell = "LillyPal_SlimCell"
+    
     static let segueToCharacterEditor = "toCharacterSheet"
 }
 

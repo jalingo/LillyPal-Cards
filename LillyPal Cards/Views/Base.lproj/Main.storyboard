@@ -337,6 +337,54 @@
                                     <outlet property="charStrengthLabel" destination="Zyo-Ud-tIX" id="plJ-qO-dzR"/>
                                 </connections>
                             </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="LillyPal_SlimCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="m9H-am-erA" customClass="LillyPalCardSlimTVC" customModule="LillyPal_Cards" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="238" width="343" height="210"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="m9H-am-erA" id="eTd-Lo-1s6">
+                                    <rect key="frame" x="0.0" y="0.0" width="343" height="210"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r89-BN-ZKG">
+                                            <rect key="frame" x="0.0" y="11" width="343" height="188"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aTh-wj-LHF">
+                                                    <rect key="frame" x="8" y="8" width="144" height="172"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="144" id="Gjt-It-VPH"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Character Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nvs-gv-5Mg">
+                                                    <rect key="frame" x="160" y="84" width="175" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.58287864919999999" green="0.85112339260000003" blue="0.89396923780000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstItem="nvs-gv-5Mg" firstAttribute="leading" secondItem="aTh-wj-LHF" secondAttribute="trailing" constant="8" symbolic="YES" id="1rm-O4-bdm"/>
+                                                <constraint firstItem="aTh-wj-LHF" firstAttribute="bottom" secondItem="r89-BN-ZKG" secondAttribute="bottomMargin" id="1zi-Dp-keh"/>
+                                                <constraint firstItem="nvs-gv-5Mg" firstAttribute="trailing" secondItem="r89-BN-ZKG" secondAttribute="trailingMargin" id="GhR-YB-KXo"/>
+                                                <constraint firstItem="aTh-wj-LHF" firstAttribute="leading" secondItem="r89-BN-ZKG" secondAttribute="leadingMargin" id="Hf6-lG-Stf"/>
+                                                <constraint firstItem="aTh-wj-LHF" firstAttribute="centerY" secondItem="nvs-gv-5Mg" secondAttribute="centerY" id="YOb-Ju-9DP"/>
+                                                <constraint firstItem="nvs-gv-5Mg" firstAttribute="top" secondItem="r89-BN-ZKG" secondAttribute="top" constant="84" id="deK-Uo-Dic"/>
+                                                <constraint firstItem="aTh-wj-LHF" firstAttribute="top" secondItem="r89-BN-ZKG" secondAttribute="topMargin" id="vao-Fe-lDJ"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="r89-BN-ZKG" firstAttribute="bottom" secondItem="eTd-Lo-1s6" secondAttribute="bottomMargin" id="LHC-Ef-nB1"/>
+                                        <constraint firstItem="r89-BN-ZKG" firstAttribute="top" secondItem="eTd-Lo-1s6" secondAttribute="topMargin" id="ios-QX-ceP"/>
+                                        <constraint firstItem="r89-BN-ZKG" firstAttribute="leading" secondItem="eTd-Lo-1s6" secondAttribute="leading" id="v59-1R-oVS"/>
+                                        <constraint firstAttribute="trailing" secondItem="r89-BN-ZKG" secondAttribute="trailing" id="wU2-QE-e1A"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" red="1" green="0.14901960780000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <outlet property="characterName" destination="nvs-gv-5Mg" id="Bei-8z-zJ8"/>
+                                    <outlet property="characterPortrait" destination="aTh-wj-LHF" id="moL-kI-rK7"/>
+                                </connections>
+                            </tableViewCell>
                         </prototypes>
                         <connections>
                             <outlet property="dataSource" destination="oW2-wE-Wl0" id="33b-nt-Hsq"/>
