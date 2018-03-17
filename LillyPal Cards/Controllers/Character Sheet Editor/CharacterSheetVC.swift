@@ -70,7 +70,6 @@ class CharacterSheetVC: UIViewController, CharacterSheetDecorator, CharacterPort
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         decorate()
     }
     
@@ -80,6 +79,7 @@ class CharacterSheetVC: UIViewController, CharacterSheetDecorator, CharacterPort
             let controller = self.navigationController?.viewControllers[index] as? MainViewController,
             let selectedIndex = controller.selectedIndex else { return }
         
+        // This passes data model changes back to main view.
         controller.players[selectedIndex] = pal
     }
 }
