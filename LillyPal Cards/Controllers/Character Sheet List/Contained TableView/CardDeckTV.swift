@@ -30,16 +30,3 @@ class CardDeckTVC: UITableViewController, ParentHasDataModel, ParentCanTriggerEd
 print(" prep happened from TableViewController \(segue.destination)")
     }
 }
-
-let playerChangeNotification = Notification.Name("numberOfPlayersChanged")
-let playerListEditNotification = Notification.Name("editButtonTapped")
-
-protocol ParentCanTriggerEdits { }
-
-extension ParentCanTriggerEdits where Self: UITableViewController {
-    func listenForEditButtonTapped() {
-        NotificationCenter.default.addObserver(forName: playerListEditNotification, object: nil, queue: nil) { _ in
-            self.isEditing = !self.isEditing
-        }
-    }
-}
