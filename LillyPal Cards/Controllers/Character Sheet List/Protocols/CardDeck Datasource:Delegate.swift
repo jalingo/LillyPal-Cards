@@ -27,7 +27,7 @@ extension CardDeckTVC {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         guard let parent = self.parent as? MainViewController else { return }
-        
+print(" parent found @ didSelectRow #\(indexPath.row)")
         parent.selectedIndex = indexPath.row
         parent.performSegue(withIdentifier: StoryBoardIdentifier.segueToCharacterEditor, sender: self)
     }
