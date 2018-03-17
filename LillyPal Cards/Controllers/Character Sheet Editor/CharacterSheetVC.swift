@@ -82,4 +82,12 @@ class CharacterSheetVC: UIViewController, CharacterSheetDecorator, CharacterPort
         // This passes data model changes back to main view.
         controller.players[selectedIndex] = pal
     }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) { resignCurrentResponder() }
+}
+
+// MARK: - Extensions
+
+extension CharacterSheetVC: FirstResponderResigner {
+    var responders: [UIResponder] { return [characterNameField] }
 }
