@@ -101,6 +101,14 @@ extension CharacterSheetVC: FirstResponderResigner {
 
 extension CharacterSheetVC: UITextFieldDelegate {
 
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        self.navigationController?.navigationBar.isUserInteractionEnabled = false
+    }
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        self.navigationController?.navigationBar.isUserInteractionEnabled = true
+    }
+    
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         return true
