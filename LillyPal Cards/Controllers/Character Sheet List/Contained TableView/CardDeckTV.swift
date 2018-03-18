@@ -12,6 +12,10 @@ class CardDeckTV: UITableViewController, ParentHasDataModel, ParentCanTriggerEdi
 
     // MARK: - Properties
     
+    override var isEditing: Bool {
+        didSet { self.tableView.reloadData() }
+    }
+    
     // MARK: - Functions
     
     // MARK: - Functions: UIViewController
