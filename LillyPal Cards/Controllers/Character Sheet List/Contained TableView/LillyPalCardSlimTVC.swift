@@ -8,9 +8,11 @@
 
 import UIKit
 
-class LillyPalCardSlimTVC: UITableViewCell {
+class LillyPalCardSlimTVC: UITableViewCell, CharacterController {
     
     // MARK: - Properties
+    
+    // MARK: - Properties: CharacterCell
     
     var current: Character? {
         didSet { decorateCell() }

@@ -8,13 +8,16 @@
 
 import UIKit
 
-class CharacterSheetVC: UIViewController, CharacterSheetDecorator, CharacterPortraitChanger, CharacterAttributeChanger, SpacesAfterDecimalCounter, FloatRounder {
+class CharacterSheetVC: UIViewController, CharacterController, CharacterSheetDecorator, CharacterPortraitChanger, CharacterAttributeChanger, SpacesAfterDecimalCounter, FloatRounder {
 
     // MARK: - Properties
 
-    var current: Character?
-    
+    // !!
     var originalState: Character?
+
+    // MARK: - Properties: CharacterController
+
+    var current: Character?
     
     // MARK: - Properties: IBOutlets
 
@@ -78,15 +81,10 @@ class CharacterSheetVC: UIViewController, CharacterSheetDecorator, CharacterPort
     }
     
     override func viewWillDisappear(_ animated: Bool) {
-        guard var pal = current as? LillyPal,
+        guard let pal = current as? LillyPal,
             let index = self.navigationController?.viewControllers.index(where: { $0 is MainViewController }),
             let controller = self.navigationController?.viewControllers[index] as? MainViewController,
             let selectedIndex = controller.selectedIndex else { return }
-
-        // This restores health if max health changed.
-        if let max = originalState?.maxHealth {
-            if pal.maxHealth > max || pal.health > pal.maxHealth { pal.health = pal.maxHealth }         // <-- Resets health when max changed, and prevents health exceeding max health. !!
-        }
         
         // This passes data model changes back to main view.
         controller.players[selectedIndex] = pal

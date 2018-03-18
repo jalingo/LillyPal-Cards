@@ -20,9 +20,8 @@ extension CardDeckTV {
         self.isEditing ? (cell = lillyPalCardSlim(for: indexPath)) : (cell = lillyPalCardWide(for: indexPath))
         
         let index = indexPath.row
-        if let cell = cell as? LillyPalCardTVC,
-            let parent = parent as? MainViewController
-        { cell.current = parent.players[index] }
+        if let parent = parent as? MainViewController,
+            let cell = cell as? CharacterController { cell.current = parent.players[index] }
         
         return cell
     }

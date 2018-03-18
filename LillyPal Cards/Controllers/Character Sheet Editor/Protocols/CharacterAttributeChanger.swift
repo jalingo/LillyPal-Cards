@@ -21,6 +21,7 @@ extension CharacterAttributeChanger where Self: CharacterSheetVC {
         case .social: current?.social = value
         }
         
+        if let max = current?.maxHealth { current?.health = max }
         decorate()
     }
 }

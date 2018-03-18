@@ -337,7 +337,7 @@
                                     <outlet property="charStrengthLabel" destination="Zyo-Ud-tIX" id="plJ-qO-dzR"/>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="LillyPal_SlimCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="m9H-am-erA" customClass="LillyPalCardSlimTVC" customModule="LillyPal_Cards" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="LillyPal_SlimCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="LillyPal_SlimCell" id="m9H-am-erA" customClass="LillyPalCardSlimTVC" customModule="LillyPal_Cards" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="238" width="343" height="210"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="m9H-am-erA" id="eTd-Lo-1s6">
@@ -379,7 +379,7 @@
                                         <constraint firstAttribute="trailing" secondItem="r89-BN-ZKG" secondAttribute="trailing" id="wU2-QE-e1A"/>
                                     </constraints>
                                 </tableViewCellContentView>
-                                <color key="backgroundColor" red="1" green="0.14901960780000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <outlet property="characterName" destination="nvs-gv-5Mg" id="Bei-8z-zJ8"/>
                                     <outlet property="characterPortrait" destination="aTh-wj-LHF" id="moL-kI-rK7"/>

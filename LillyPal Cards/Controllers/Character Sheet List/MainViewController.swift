@@ -20,9 +20,7 @@ class MainViewController: UIViewController, MainViewDecorator {
         }
     }
     
-    var selectedIndex: Int? {
-        didSet { print(" selected index is set") }
-    }
+    var selectedIndex: Int?
     
     // MARK: - Properties: IBOutlets
     
@@ -63,16 +61,7 @@ class MainViewController: UIViewController, MainViewDecorator {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let controller = segue.destination as? CharacterSheetVC, let index = selectedIndex { controller.current = players[index] }
-        
-        if let _ = segue.destination as? CharacterSheetVC, let _ = selectedIndex {
-print(" full completion")
-        } else if let _ = segue.destination as? CharacterSheetVC {
-print(" partial completion (controller found)")
-        } else if let _ = selectedIndex {
-print(" partial completion (index found)")
-        } else {
-print(" no completion")
-        }
+        if let controller = segue.destination as? CharacterController,
+            let index = selectedIndex { controller.current = players[index] }
     }
 }

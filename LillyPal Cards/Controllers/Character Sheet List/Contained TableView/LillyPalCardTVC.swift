@@ -8,9 +8,11 @@
 
 import UIKit
 
-class LillyPalCardTVC: UITableViewCell, LillyPalCardDecorator {
+class LillyPalCardTVC: UITableViewCell, LillyPalCardDecorator, CharacterController {
 
     // MARK: - Properties
+    
+    // MARK: - Properties: CharacterCell
 
     var current: Character? {
         didSet { calculateStats() }

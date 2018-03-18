@@ -8,7 +8,23 @@
 
 import UIKit
 
+// MARK: - Enums
+
+// MARK: - Enum: CharacterAttribute
+
+// !!
 enum CharacterAttribute { case body, mind, social }
+
+// MARK: - Protocols
+
+// MARK: - Protocol: CharacterController
+
+// !!
+protocol CharacterController: AnyObject {
+    var current: Character? { get set }
+}
+
+// MARK: - Protocol: Character
 
 protocol Character {
     
@@ -24,6 +40,8 @@ protocol Character {
     
     var portrait: UIImage { get set }
 }
+
+// MARK: - Extension: Character
 
 extension Character {
     
