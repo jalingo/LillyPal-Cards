@@ -65,6 +65,8 @@
 		A1BC6269205F9B6000884829 /* CharacterAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BC6267205F9B6000884829 /* CharacterAttribute.swift */; };
 		A1BC626B205F9C5600884829 /* CharacterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BC626A205F9C5600884829 /* CharacterController.swift */; };
 		A1BC626C205F9C5600884829 /* CharacterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BC626A205F9C5600884829 /* CharacterController.swift */; };
+		A1BC626E205FBE8B00884829 /* TextField Delegation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BC626D205FBE8B00884829 /* TextField Delegation.swift */; };
+		A1BC626F205FBE8B00884829 /* TextField Delegation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BC626D205FBE8B00884829 /* TextField Delegation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -123,6 +125,7 @@
 		A1BC6263205F456B00884829 /* ModelReturner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelReturner.swift; sourceTree = "<group>"; };
 		A1BC6267205F9B6000884829 /* CharacterAttribute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterAttribute.swift; sourceTree = "<group>"; };
 		A1BC626A205F9C5600884829 /* CharacterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterController.swift; sourceTree = "<group>"; };
+		A1BC626D205FBE8B00884829 /* TextField Delegation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TextField Delegation.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +165,7 @@
 		A194F12A205BCD6900BEDAA0 /* Protocols And Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				A1BC626D205FBE8B00884829 /* TextField Delegation.swift */,
 				A1BC6263205F456B00884829 /* ModelReturner.swift */,
 				A1BC6260205F426B00884829 /* CharacterHealthAdjuster.swift */,
 				A1BC624B205D05CB00884829 /* FloatRounder.swift */,
@@ -458,6 +462,7 @@
 				A1BC6261205F426B00884829 /* CharacterHealthAdjuster.swift in Sources */,
 				A1BC6264205F456B00884829 /* ModelReturner.swift in Sources */,
 				A194F122205BC5B300BEDAA0 /* CharacterSheetDecorator.swift in Sources */,
+				A1BC626E205FBE8B00884829 /* TextField Delegation.swift in Sources */,
 				A1B365D1205A0665009698B0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -492,6 +497,7 @@
 				A1BC6262205F426B00884829 /* CharacterHealthAdjuster.swift in Sources */,
 				A1BC6265205F456B00884829 /* ModelReturner.swift in Sources */,
 				A194F123205BC5B300BEDAA0 /* CharacterSheetDecorator.swift in Sources */,
+				A1BC626F205FBE8B00884829 /* TextField Delegation.swift in Sources */,
 				A1B3660A205A6A91009698B0 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

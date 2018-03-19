@@ -38,7 +38,7 @@ class MainViewController: UIViewController, MainViewDecorator, MainViewUpdater, 
     
     /// This IBAction method is triggered when USER taps the edit button and alternates the `isEditing` property of table view in `listOfPlayersView` through a notification.
     @IBAction func editButtonTapped(_ sender: UIButton) {
-        NotificationCenter.default.post(name: editButtonTapped, object: nil) }
+        NotificationCenter.default.post(name: editButtonNotification, object: nil) }
     
     /// This IBAction method is triggered when USER interacts with `numberOfPlayersStepper` and changes the number of players in the direction USER indicated.
     @IBAction func numberOfPlayersStepped(_ sender: UIStepper) { playersChanged(by: sender) }
