@@ -148,12 +148,12 @@
 			isa = PBXGroup;
 			children = (
 				A1B36607205A438F009698B0 /* CharacterSheetVC.swift */,
-				A194F12A205BCD6900BEDAA0 /* Protocols */,
+				A194F12A205BCD6900BEDAA0 /* Protocols And Extensions */,
 			);
 			path = "Character Sheet Editor";
 			sourceTree = "<group>";
 		};
-		A194F12A205BCD6900BEDAA0 /* Protocols */ = {
+		A194F12A205BCD6900BEDAA0 /* Protocols And Extensions */ = {
 			isa = PBXGroup;
 			children = (
 				A1BC6263205F456B00884829 /* ModelReturner.swift */,
@@ -165,7 +165,7 @@
 				A194F127205BCC7600BEDAA0 /* CharacterAttributeChanger.swift */,
 				A1BC6251205D23F700884829 /* FirstResponderResigner.swift */,
 			);
-			path = Protocols;
+			path = "Protocols And Extensions";
 			sourceTree = "<group>";
 		};
 		A194F12E205C376B00BEDAA0 /* Character Sheet List */ = {
@@ -173,23 +173,20 @@
 			children = (
 				A1B365D2205A0665009698B0 /* MainViewController.swift */,
 				A194F139205C475600BEDAA0 /* Contained TableView */,
-				A194F12F205C37D300BEDAA0 /* Protocols */,
+				A194F12F205C37D300BEDAA0 /* Protocols And Extensions */,
 			);
 			path = "Character Sheet List";
 			sourceTree = "<group>";
 		};
-		A194F12F205C37D300BEDAA0 /* Protocols */ = {
+		A194F12F205C37D300BEDAA0 /* Protocols And Extensions */ = {
 			isa = PBXGroup;
 			children = (
 				A1BC625D205F3C6100884829 /* PlayerStepper.swift */,
 				A1BC625A205F3AE700884829 /* MainViewUpdater.swift */,
 				A194F12B205C371800BEDAA0 /* MainViewDecorator.swift */,
-				A1BC6248205CEFC700884829 /* LillyPalCardDecorator.swift */,
-				A194F133205C383600BEDAA0 /* CardDeck Datasource:Delegate.swift */,
-				A194F130205C37F400BEDAA0 /* ParentHasDataModel.swift */,
-				A1BC6242205CEE9500884829 /* ParentCanTriggerEdits.swift */,
+				A1BC6266205F995600884829 /* TableView */,
 			);
-			path = Protocols;
+			path = "Protocols And Extensions";
 			sourceTree = "<group>";
 		};
 		A194F139205C475600BEDAA0 /* Contained TableView */ = {
@@ -280,6 +277,17 @@
 				A1BC6245205CEF2B00884829 /* LillyPal.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		A1BC6266205F995600884829 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				A1BC6248205CEFC700884829 /* LillyPalCardDecorator.swift */,
+				A194F133205C383600BEDAA0 /* CardDeck Datasource:Delegate.swift */,
+				A194F130205C37F400BEDAA0 /* ParentHasDataModel.swift */,
+				A1BC6242205CEE9500884829 /* ParentCanTriggerEdits.swift */,
+			);
+			path = TableView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

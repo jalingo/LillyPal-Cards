@@ -8,9 +8,9 @@
 
 import UIKit
 
-protocol ModelReturner { }
+protocol CharacterReturner { }
 
-extension ModelReturner where Self: CharacterSheetVC {
+extension CharacterReturner where Self: CharacterSheetVC {
     
     /// This void method passes data model changes back to main view.
     func returnModelToMainViewController() {

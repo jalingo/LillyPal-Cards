@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CharacterSheetVC: UIViewController, CharacterController, CharacterSheetDecorator, CharacterPortraitChanger, CharacterAttributeChanger, SpacesAfterDecimalCounter, FloatRounder, CharacterHealthAdjuster, ModelReturner {
+class CharacterSheetVC: UIViewController, CharacterController, CharacterSheetDecorator, CharacterPortraitChanger, CharacterAttributeChanger, SpacesAfterDecimalCounter, FloatRounder, CharacterHealthAdjuster, CharacterReturner {
 
     // MARK: - Properties
 
