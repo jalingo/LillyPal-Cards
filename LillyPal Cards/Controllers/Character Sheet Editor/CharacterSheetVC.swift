@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CharacterSheetVC: UIViewController, CharacterController, CharacterSheetDecorator, CharacterPortraitChanger, CharacterAttributeChanger, SpacesAfterDecimalCounter, FloatRounder, CharacterHealthAdjuster {
+class CharacterSheetVC: UIViewController, CharacterController, CharacterSheetDecorator, CharacterPortraitChanger, CharacterAttributeChanger, SpacesAfterDecimalCounter, FloatRounder, CharacterHealthAdjuster, ModelReturner {
 
     // MARK: - Properties
 
@@ -69,21 +69,14 @@ class CharacterSheetVC: UIViewController, CharacterController, CharacterSheetDec
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
         decorate()
-        
         originalState = current
     }
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        
-        guard let pal = current as? LillyPal,
-            let index = self.navigationController?.viewControllers.index(where: { $0 is MainViewController }),
-            let controller = self.navigationController?.viewControllers[index] as? MainViewController,
-            let selectedIndex = controller.selectedIndex else { return }
-        
-        // This passes data model changes back to main view.
-        controller.players[selectedIndex] = pal
+        returnModelToMainViewController()
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) { resignCurrentResponder() }
