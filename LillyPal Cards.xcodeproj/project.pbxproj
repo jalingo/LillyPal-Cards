@@ -17,8 +17,8 @@
 		A194F129205BCC7600BEDAA0 /* CharacterAttributeChanger.swift in Sources */ = {isa = PBXBuildFile; fileRef = A194F127205BCC7600BEDAA0 /* CharacterAttributeChanger.swift */; };
 		A194F12C205C371800BEDAA0 /* MainViewDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A194F12B205C371800BEDAA0 /* MainViewDecorator.swift */; };
 		A194F12D205C371800BEDAA0 /* MainViewDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A194F12B205C371800BEDAA0 /* MainViewDecorator.swift */; };
-		A194F131205C37F400BEDAA0 /* ParentHasDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A194F130205C37F400BEDAA0 /* ParentHasDataModel.swift */; };
-		A194F132205C37F400BEDAA0 /* ParentHasDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A194F130205C37F400BEDAA0 /* ParentHasDataModel.swift */; };
+		A194F131205C37F400BEDAA0 /* ParentModelChangeListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = A194F130205C37F400BEDAA0 /* ParentModelChangeListener.swift */; };
+		A194F132205C37F400BEDAA0 /* ParentModelChangeListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = A194F130205C37F400BEDAA0 /* ParentModelChangeListener.swift */; };
 		A194F134205C383600BEDAA0 /* CardDeck Datasource:Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A194F133205C383600BEDAA0 /* CardDeck Datasource:Delegate.swift */; };
 		A194F135205C383600BEDAA0 /* CardDeck Datasource:Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A194F133205C383600BEDAA0 /* CardDeck Datasource:Delegate.swift */; };
 		A194F137205C474000BEDAA0 /* LillyPalCardTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A194F136205C474000BEDAA0 /* LillyPalCardTVC.swift */; };
@@ -61,6 +61,10 @@
 		A1BC6262205F426B00884829 /* CharacterHealthAdjuster.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BC6260205F426B00884829 /* CharacterHealthAdjuster.swift */; };
 		A1BC6264205F456B00884829 /* ModelReturner.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BC6263205F456B00884829 /* ModelReturner.swift */; };
 		A1BC6265205F456B00884829 /* ModelReturner.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BC6263205F456B00884829 /* ModelReturner.swift */; };
+		A1BC6268205F9B6000884829 /* CharacterAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BC6267205F9B6000884829 /* CharacterAttribute.swift */; };
+		A1BC6269205F9B6000884829 /* CharacterAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BC6267205F9B6000884829 /* CharacterAttribute.swift */; };
+		A1BC626B205F9C5600884829 /* CharacterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BC626A205F9C5600884829 /* CharacterController.swift */; };
+		A1BC626C205F9C5600884829 /* CharacterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BC626A205F9C5600884829 /* CharacterController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,7 +90,7 @@
 		A194F124205BC69A00BEDAA0 /* CharacterPortraitChanger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterPortraitChanger.swift; sourceTree = "<group>"; };
 		A194F127205BCC7600BEDAA0 /* CharacterAttributeChanger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterAttributeChanger.swift; sourceTree = "<group>"; };
 		A194F12B205C371800BEDAA0 /* MainViewDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewDecorator.swift; sourceTree = "<group>"; };
-		A194F130205C37F400BEDAA0 /* ParentHasDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentHasDataModel.swift; sourceTree = "<group>"; };
+		A194F130205C37F400BEDAA0 /* ParentModelChangeListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentModelChangeListener.swift; sourceTree = "<group>"; };
 		A194F133205C383600BEDAA0 /* CardDeck Datasource:Delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CardDeck Datasource:Delegate.swift"; sourceTree = "<group>"; };
 		A194F136205C474000BEDAA0 /* LillyPalCardTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LillyPalCardTVC.swift; sourceTree = "<group>"; };
 		A1B365CD205A0665009698B0 /* LillyPal Cards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LillyPal Cards.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -117,6 +121,8 @@
 		A1BC625D205F3C6100884829 /* PlayerStepper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerStepper.swift; sourceTree = "<group>"; };
 		A1BC6260205F426B00884829 /* CharacterHealthAdjuster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterHealthAdjuster.swift; sourceTree = "<group>"; };
 		A1BC6263205F456B00884829 /* ModelReturner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelReturner.swift; sourceTree = "<group>"; };
+		A1BC6267205F9B6000884829 /* CharacterAttribute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterAttribute.swift; sourceTree = "<group>"; };
+		A1BC626A205F9C5600884829 /* CharacterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -263,6 +269,7 @@
 		A1B36605205A4176009698B0 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				A1BC626A205F9C5600884829 /* CharacterController.swift */,
 				A1B36601205A4156009698B0 /* NavBarNC.swift */,
 				A194F12E205C376B00BEDAA0 /* Character Sheet List */,
 				A194F120205BC57300BEDAA0 /* Character Sheet Editor */,
@@ -274,6 +281,7 @@
 			isa = PBXGroup;
 			children = (
 				A194F11D205ADEEB00BEDAA0 /* Character.swift */,
+				A1BC6267205F9B6000884829 /* CharacterAttribute.swift */,
 				A1BC6245205CEF2B00884829 /* LillyPal.swift */,
 			);
 			path = Models;
@@ -284,7 +292,7 @@
 			children = (
 				A1BC6248205CEFC700884829 /* LillyPalCardDecorator.swift */,
 				A194F133205C383600BEDAA0 /* CardDeck Datasource:Delegate.swift */,
-				A194F130205C37F400BEDAA0 /* ParentHasDataModel.swift */,
+				A194F130205C37F400BEDAA0 /* ParentModelChangeListener.swift */,
 				A1BC6242205CEE9500884829 /* ParentCanTriggerEdits.swift */,
 			);
 			path = TableView;
@@ -426,7 +434,7 @@
 			files = (
 				A1BC6249205CEFC700884829 /* LillyPalCardDecorator.swift in Sources */,
 				A1BC625B205F3AE700884829 /* MainViewUpdater.swift in Sources */,
-				A194F131205C37F400BEDAA0 /* ParentHasDataModel.swift in Sources */,
+				A194F131205C37F400BEDAA0 /* ParentModelChangeListener.swift in Sources */,
 				A1BC6255205D2C4A00884829 /* Strings.swift in Sources */,
 				A1BC6243205CEE9500884829 /* ParentCanTriggerEdits.swift in Sources */,
 				A1BC6252205D23F700884829 /* FirstResponderResigner.swift in Sources */,
@@ -444,7 +452,9 @@
 				A194F125205BC69A00BEDAA0 /* CharacterPortraitChanger.swift in Sources */,
 				A194F11E205ADEEB00BEDAA0 /* Character.swift in Sources */,
 				A1B36608205A438F009698B0 /* CharacterSheetVC.swift in Sources */,
+				A1BC6268205F9B6000884829 /* CharacterAttribute.swift in Sources */,
 				A1BC6258205DCA5700884829 /* LillyPalCardSlimTVC.swift in Sources */,
+				A1BC626B205F9C5600884829 /* CharacterController.swift in Sources */,
 				A1BC6261205F426B00884829 /* CharacterHealthAdjuster.swift in Sources */,
 				A1BC6264205F456B00884829 /* ModelReturner.swift in Sources */,
 				A194F122205BC5B300BEDAA0 /* CharacterSheetDecorator.swift in Sources */,
@@ -458,7 +468,7 @@
 			files = (
 				A1BC624A205CEFC700884829 /* LillyPalCardDecorator.swift in Sources */,
 				A1BC625C205F3AE700884829 /* MainViewUpdater.swift in Sources */,
-				A194F132205C37F400BEDAA0 /* ParentHasDataModel.swift in Sources */,
+				A194F132205C37F400BEDAA0 /* ParentModelChangeListener.swift in Sources */,
 				A1BC6256205D2C4A00884829 /* Strings.swift in Sources */,
 				A1BC6244205CEE9600884829 /* ParentCanTriggerEdits.swift in Sources */,
 				A1BC6253205D23F700884829 /* FirstResponderResigner.swift in Sources */,
@@ -476,7 +486,9 @@
 				A194F126205BC69A00BEDAA0 /* CharacterPortraitChanger.swift in Sources */,
 				A194F11F205ADEEB00BEDAA0 /* Character.swift in Sources */,
 				A1B365E6205A0665009698B0 /* LillyPal_CardsTests.swift in Sources */,
+				A1BC6269205F9B6000884829 /* CharacterAttribute.swift in Sources */,
 				A1BC6259205DFDD300884829 /* LillyPalCardSlimTVC.swift in Sources */,
+				A1BC626C205F9C5600884829 /* CharacterController.swift in Sources */,
 				A1BC6262205F426B00884829 /* CharacterHealthAdjuster.swift in Sources */,
 				A1BC6265205F456B00884829 /* ModelReturner.swift in Sources */,
 				A194F123205BC5B300BEDAA0 /* CharacterSheetDecorator.swift in Sources */,

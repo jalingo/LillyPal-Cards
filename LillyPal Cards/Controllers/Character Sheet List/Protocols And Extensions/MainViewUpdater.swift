@@ -8,13 +8,15 @@
 
 import UIKit
 
+/// Conforming types to this protocol can call `updateViews` method when `MainViewController.players` didSet.
 protocol MainViewUpdater { }
 
 extension MainViewUpdater where Self: MainViewController {
     
-    // !!
+    /// This void method posts a `playerChangeNotification` and updates the `numberOfPlayersField` and `numberOfPlayersStepper` properties.
     func updateViews() {
         NotificationCenter.default.post(name: playerChangeNotification, object: nil)
+        
         numberOfPlayersField.text = "\(players.count)"
         numberOfPlayersStepper.value = Double(exactly: players.count) ?? 0.0
     }

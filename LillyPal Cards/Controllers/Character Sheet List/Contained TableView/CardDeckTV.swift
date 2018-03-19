@@ -8,10 +8,12 @@
 
 import UIKit
 
-class CardDeckTV: UITableViewController, ParentHasDataModel, ParentCanTriggerEdits {
+/// This sub class of `UITableViewController` is contained in `MainViewController` and displays the list of character's stored in it's parent's `players` property.
+class CardDeckTV: UITableViewController, ParentModelChangeListener, ParentCanTriggerEdits {
 
     // MARK: - Properties
     
+    /// This override of `isEditing` property allows for table view to `reloadData` when set.
     override var isEditing: Bool {
         didSet { self.tableView.reloadData() }
     }
@@ -20,10 +22,11 @@ class CardDeckTV: UITableViewController, ParentHasDataModel, ParentCanTriggerEdi
     
     // MARK: - Functions: UIViewController
     
+    /// This override of `viewDidLoad` method listens for changes at the `MainViewController.players` property and for USER interaction at the `MainViewController.editButtonTapped:sender` method.
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        listenForDataModelChanges()
+        listenForDataModelChangesInParent()
         listenForEditButtonTapped()
     }
 }

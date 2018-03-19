@@ -8,15 +8,18 @@
 
 import UIKit
 
+/// Conforming types to this protocol can call `decorate` method when `MainViewController.viewWillAppear` is called.
 protocol MainViewDecorator { }
 
 extension MainViewDecorator where Self: MainViewController {
-    
+
+    /// This void method hide nav bar and configures `MainViewController.numberOfPlayersStepper`.
     func decorate() {
         self.navigationController?.isNavigationBarHidden = true
         configureStepper()
     }
     
+    /// This fileprivate void method configures `MainViewController.numberOfPlayersStepper`.
     fileprivate func configureStepper() {
         self.numberOfPlayersStepper.stepValue = 1.0
         self.numberOfPlayersStepper.minimumValue = 0
