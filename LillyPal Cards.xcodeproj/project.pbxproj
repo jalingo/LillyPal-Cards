@@ -53,6 +53,10 @@
 		A1BC6256205D2C4A00884829 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BC6254205D2C4A00884829 /* Strings.swift */; };
 		A1BC6258205DCA5700884829 /* LillyPalCardSlimTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BC6257205DCA5700884829 /* LillyPalCardSlimTVC.swift */; };
 		A1BC6259205DFDD300884829 /* LillyPalCardSlimTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BC6257205DCA5700884829 /* LillyPalCardSlimTVC.swift */; };
+		A1BC625B205F3AE700884829 /* MainViewUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BC625A205F3AE700884829 /* MainViewUpdater.swift */; };
+		A1BC625C205F3AE700884829 /* MainViewUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BC625A205F3AE700884829 /* MainViewUpdater.swift */; };
+		A1BC625E205F3C6100884829 /* PlayerStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BC625D205F3C6100884829 /* PlayerStepper.swift */; };
+		A1BC625F205F3C6100884829 /* PlayerStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BC625D205F3C6100884829 /* PlayerStepper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,6 +109,8 @@
 		A1BC6251205D23F700884829 /* FirstResponderResigner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstResponderResigner.swift; sourceTree = "<group>"; };
 		A1BC6254205D2C4A00884829 /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		A1BC6257205DCA5700884829 /* LillyPalCardSlimTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LillyPalCardSlimTVC.swift; sourceTree = "<group>"; };
+		A1BC625A205F3AE700884829 /* MainViewUpdater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewUpdater.swift; sourceTree = "<group>"; };
+		A1BC625D205F3C6100884829 /* PlayerStepper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerStepper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +173,8 @@
 		A194F12F205C37D300BEDAA0 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				A1BC625D205F3C6100884829 /* PlayerStepper.swift */,
+				A1BC625A205F3AE700884829 /* MainViewUpdater.swift */,
 				A194F12B205C371800BEDAA0 /* MainViewDecorator.swift */,
 				A1BC6248205CEFC700884829 /* LillyPalCardDecorator.swift */,
 				A194F133205C383600BEDAA0 /* CardDeck Datasource:Delegate.swift */,
@@ -401,6 +409,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A1BC6249205CEFC700884829 /* LillyPalCardDecorator.swift in Sources */,
+				A1BC625B205F3AE700884829 /* MainViewUpdater.swift in Sources */,
 				A194F131205C37F400BEDAA0 /* ParentHasDataModel.swift in Sources */,
 				A1BC6255205D2C4A00884829 /* Strings.swift in Sources */,
 				A1BC6243205CEE9500884829 /* ParentCanTriggerEdits.swift in Sources */,
@@ -408,6 +417,7 @@
 				A1B36602205A4156009698B0 /* NavBarNC.swift in Sources */,
 				A194F134205C383600BEDAA0 /* CardDeck Datasource:Delegate.swift in Sources */,
 				A194F137205C474000BEDAA0 /* LillyPalCardTVC.swift in Sources */,
+				A1BC625E205F3C6100884829 /* PlayerStepper.swift in Sources */,
 				A1BC624F205D068500884829 /* SpacesAfterDecimalCounter.swift in Sources */,
 				A1BC6246205CEF2B00884829 /* LillyPal.swift in Sources */,
 				A1BC624C205D05CB00884829 /* FloatRounder.swift in Sources */,
@@ -429,6 +439,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A1BC624A205CEFC700884829 /* LillyPalCardDecorator.swift in Sources */,
+				A1BC625C205F3AE700884829 /* MainViewUpdater.swift in Sources */,
 				A194F132205C37F400BEDAA0 /* ParentHasDataModel.swift in Sources */,
 				A1BC6256205D2C4A00884829 /* Strings.swift in Sources */,
 				A1BC6244205CEE9600884829 /* ParentCanTriggerEdits.swift in Sources */,
@@ -436,6 +447,7 @@
 				A1B36609205A438F009698B0 /* CharacterSheetVC.swift in Sources */,
 				A194F135205C383600BEDAA0 /* CardDeck Datasource:Delegate.swift in Sources */,
 				A194F138205C474000BEDAA0 /* LillyPalCardTVC.swift in Sources */,
+				A1BC625F205F3C6100884829 /* PlayerStepper.swift in Sources */,
 				A1BC6250205D068500884829 /* SpacesAfterDecimalCounter.swift in Sources */,
 				A1BC6247205CEF2B00884829 /* LillyPal.swift in Sources */,
 				A1BC624D205D05CB00884829 /* FloatRounder.swift in Sources */,

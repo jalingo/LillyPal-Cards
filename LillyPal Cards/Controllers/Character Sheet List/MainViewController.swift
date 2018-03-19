@@ -8,16 +8,12 @@
 
 import UIKit
 
-class MainViewController: UIViewController, MainViewDecorator {
+class MainViewController: UIViewController, MainViewDecorator, MainViewUpdater, PlayerStepper {
 
     // MARK: - Properties
     
     var players = [LillyPal]() {
-        didSet {
-            NotificationCenter.default.post(name: playerChangeNotification, object: nil)
-            numberOfPlayersField.text = "\(players.count)"
-            numberOfPlayersStepper.value = Double(exactly: players.count) ?? 0.0
-        }
+        didSet { updateViews() }
     }
     
     var selectedIndex: Int?
@@ -35,23 +31,9 @@ class MainViewController: UIViewController, MainViewDecorator {
     // MARK: - Functions: IBActions
     
     @IBAction func editButtonTapped(_ sender: UIButton) {
-        NotificationCenter.default.post(name: playerListEditNotification, object: nil)
-    }
+        NotificationCenter.default.post(name: playerListEditNotification, object: nil) }
     
-    @IBAction func numberOfPlayersStepped(_ sender: UIStepper) {
-        let total = Int(exactly: sender.value) ?? 0
-
-        let count: Int
-        count = total - players.count
-
-        guard count != 0 else { players = []; return }
-        
-        if count > 0 {
-            for _ in 1...count { players.append(LillyPal()) }
-        } else {
-            for _ in 1...abs(count) { players.removeLast() }
-        }
-    }
+    @IBAction func numberOfPlayersStepped(_ sender: UIStepper) { playersChanged(by: sender) }
     
     // MARK: - Functions: UIViewController
     
