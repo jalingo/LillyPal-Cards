@@ -57,6 +57,8 @@
 		A1BC625C205F3AE700884829 /* MainViewUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BC625A205F3AE700884829 /* MainViewUpdater.swift */; };
 		A1BC625E205F3C6100884829 /* PlayerStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BC625D205F3C6100884829 /* PlayerStepper.swift */; };
 		A1BC625F205F3C6100884829 /* PlayerStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BC625D205F3C6100884829 /* PlayerStepper.swift */; };
+		A1BC6261205F426B00884829 /* CharacterHealthAdjuster.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BC6260205F426B00884829 /* CharacterHealthAdjuster.swift */; };
+		A1BC6262205F426B00884829 /* CharacterHealthAdjuster.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BC6260205F426B00884829 /* CharacterHealthAdjuster.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,6 +113,7 @@
 		A1BC6257205DCA5700884829 /* LillyPalCardSlimTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LillyPalCardSlimTVC.swift; sourceTree = "<group>"; };
 		A1BC625A205F3AE700884829 /* MainViewUpdater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewUpdater.swift; sourceTree = "<group>"; };
 		A1BC625D205F3C6100884829 /* PlayerStepper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerStepper.swift; sourceTree = "<group>"; };
+		A1BC6260205F426B00884829 /* CharacterHealthAdjuster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterHealthAdjuster.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +153,7 @@
 		A194F12A205BCD6900BEDAA0 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				A1BC6260205F426B00884829 /* CharacterHealthAdjuster.swift */,
 				A1BC624B205D05CB00884829 /* FloatRounder.swift */,
 				A1BC624E205D068500884829 /* SpacesAfterDecimalCounter.swift */,
 				A194F124205BC69A00BEDAA0 /* CharacterPortraitChanger.swift */,
@@ -429,6 +433,7 @@
 				A194F11E205ADEEB00BEDAA0 /* Character.swift in Sources */,
 				A1B36608205A438F009698B0 /* CharacterSheetVC.swift in Sources */,
 				A1BC6258205DCA5700884829 /* LillyPalCardSlimTVC.swift in Sources */,
+				A1BC6261205F426B00884829 /* CharacterHealthAdjuster.swift in Sources */,
 				A194F122205BC5B300BEDAA0 /* CharacterSheetDecorator.swift in Sources */,
 				A1B365D1205A0665009698B0 /* AppDelegate.swift in Sources */,
 			);
@@ -459,6 +464,7 @@
 				A194F11F205ADEEB00BEDAA0 /* Character.swift in Sources */,
 				A1B365E6205A0665009698B0 /* LillyPal_CardsTests.swift in Sources */,
 				A1BC6259205DFDD300884829 /* LillyPalCardSlimTVC.swift in Sources */,
+				A1BC6262205F426B00884829 /* CharacterHealthAdjuster.swift in Sources */,
 				A194F123205BC5B300BEDAA0 /* CharacterSheetDecorator.swift in Sources */,
 				A1B3660A205A6A91009698B0 /* MainViewController.swift in Sources */,
 			);

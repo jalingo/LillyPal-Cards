@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CharacterSheetVC: UIViewController, CharacterController, CharacterSheetDecorator, CharacterPortraitChanger, CharacterAttributeChanger, SpacesAfterDecimalCounter, FloatRounder {
+class CharacterSheetVC: UIViewController, CharacterController, CharacterSheetDecorator, CharacterPortraitChanger, CharacterAttributeChanger, SpacesAfterDecimalCounter, FloatRounder, CharacterHealthAdjuster {
 
     // MARK: - Properties
 
@@ -57,13 +57,7 @@ class CharacterSheetVC: UIViewController, CharacterController, CharacterSheetDec
     
     @IBAction func nameFieldEdited(_ sender: UITextField) { current?.name = sender.text ?? Defaults.characterName }
     
-    @IBAction func healthSliderAdjusted(_ sender: UISlider) {
-        guard let current = current,
-            let roundedValue = Int(exactly: round(off: sender.value, toPlace: 0)) else { return }
-        
-        characterHealthField.text = "\(roundedValue) / \(current.maxHealth)"
-        self.current?.health = roundedValue
-    }
+    @IBAction func healthSliderAdjusted(_ sender: UISlider) { adjust(from: sender) }
     
     @IBAction func bodyStepperTapped(_ sender: UIStepper) { change(attribute: .body, to: sender.value) }
     
@@ -81,6 +75,8 @@ class CharacterSheetVC: UIViewController, CharacterController, CharacterSheetDec
     }
     
     override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        
         guard let pal = current as? LillyPal,
             let index = self.navigationController?.viewControllers.index(where: { $0 is MainViewController }),
             let controller = self.navigationController?.viewControllers[index] as? MainViewController,
