@@ -15,7 +15,7 @@ class LillyPalCardTVC: UITableViewCell, LillyPalCardDecorator, CharacterControll
     // MARK: - Properties: CharacterCell
 
     var current: Character? {
-        didSet { calculateStats() }
+        didSet { updateViews() }
     }
     
     // MARK: - Properties: IBOutlets
@@ -41,20 +41,4 @@ class LillyPalCardTVC: UITableViewCell, LillyPalCardDecorator, CharacterControll
     @IBOutlet weak var charReactionLabel: UILabel!
     
     @IBOutlet weak var charHealthLabel: UILabel!
-    
-    // MARK: - Functions
-    
-    // MARK: - Functions: UITableViewCell
-    
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-        
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
 }
