@@ -40,5 +40,6 @@ struct LillyPal: Character {
 
 extension LillyPal: CustomStringConvertible {
     
+    /// A textual representation of this instance.
     var description: String { return "\(portrait) \(name)" }
 }
