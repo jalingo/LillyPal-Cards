@@ -8,6 +8,8 @@
 
 import UIKit
 
+// MARK: Class
+
 /// This sub-class of UIViewController is used to make changes to a specific LillyPal, and then pass those changes back to the `MainViewController` root.
 class CharacterSheetVC: UIViewController, CharacterController, CharacterSheetDecorator, CharacterPortraitChanger, CharacterAttributeChanger, CharacterHealthAdjuster, CharacterReturner {
 
@@ -57,30 +59,37 @@ class CharacterSheetVC: UIViewController, CharacterController, CharacterSheetDec
     // MARK: - Functions: IBActions
     
     /// This IBAction method is called when USER taps the previous image button and it changes `current?.portrait` before updating `characterPortrait` property.
+    /// - Parameter sender: The UIKit object that called the IBAction.
     @IBAction func previousTapped(_ sender: UIButton) {
         current?.portrait = previousPortrait()
         setCurrentImage()
     }
     
     /// This IBAction method is called when USER taps the next image button and it changes `current?.portrait` before updating `characterPortrait` property.
+    /// - Parameter sender: The UIKit object that called the IBAction.
     @IBAction func nextTapped(_ sender: UIButton) {
         current?.portrait = nextPortrait()
         setCurrentImage()
     }
     
     /// This IBAction method is called when USER makes changes to the `characterNameField` and it saves those changes to `current?.name` property.
+    /// - Parameter sender: The UIKit object that called the IBAction.
     @IBAction func nameFieldEdited(_ sender: UITextField) { current?.name = sender.text ?? Defaults.characterName }
 
     /// This IBAction method is called when USER adjusts `characterHealthSlider` and it then calls `adjust:from` method.
+    /// - Parameter sender: The UIKit object that called the IBAction.
     @IBAction func healthSliderAdjusted(_ sender: UISlider) { adjust(from: sender) }
     
     /// This IBAction method is called when USER interacts with `characterBodyStepper` and then calls `change:attribute:to` method.
+    /// - Parameter sender: The UIKit object that called the IBAction.
     @IBAction func bodyStepperTapped(_ sender: UIStepper) { change(attribute: .body, to: sender.value) }
     
     /// This IBAction method is called when USER interacts with `characterMindStepper` and then calls `change:attribute:to` method.
+    /// - Parameter sender: The UIKit object that called the IBAction.
     @IBAction func mindStepperTapped(_ sender: UIStepper) { change(attribute: .mind, to: sender.value) }
     
     /// This IBAction method is called when USER interacts with `characterSocialStepper` and then calls `change:attribute:to` method.
+    /// - Parameter sender: The UIKit object that called the IBAction.
     @IBAction func socialStepperTapped(_ sender: UIStepper) { change(attribute: .social, to: sender.value) }
     
     // MARK: - Functions: UIViewController

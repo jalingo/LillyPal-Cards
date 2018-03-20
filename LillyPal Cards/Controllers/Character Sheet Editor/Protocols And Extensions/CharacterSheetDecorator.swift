@@ -8,8 +8,12 @@
 
 import UIKit
 
+// MARK: Protocol
+
 /// Types conforming to this protocol can call several decorate and configure methods for `CharacterSheetVC` controller.
 protocol CharacterSheetDecorator { }
+
+// MARK: - Extension
 
 extension CharacterSheetDecorator where Self: CharacterSheetVC {
 

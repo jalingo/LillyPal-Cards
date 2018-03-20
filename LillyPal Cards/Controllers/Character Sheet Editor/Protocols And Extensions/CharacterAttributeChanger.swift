@@ -8,8 +8,12 @@
 
 import Foundation
 
+// MARK: Protocol
+
 /// Types conforming to this protocol can call the `change:attribute:to` method, and adjust `current` property stats and attributes.
 protocol CharacterAttributeChanger { }
+
+// MARK: - Extension
 
 extension CharacterAttributeChanger where Self: CharacterSheetVC {
     

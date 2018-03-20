@@ -8,12 +8,16 @@
 
 import UIKit
 
+// MARK: Protocol
+
 /// Types that conform to this protocol can call the `resignCurrentResponder` method and release input keyboard.
 protocol FirstResponderResigner {
     
     /// This read-only, computed property returns an array with all possible responders that can be resigned.
     var responders: [UIResponder] { get }
 }
+
+// MARK: - Extension
 
 extension FirstResponderResigner {
     

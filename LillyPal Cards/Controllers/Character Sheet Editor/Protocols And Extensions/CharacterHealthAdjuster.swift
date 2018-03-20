@@ -8,8 +8,12 @@
 
 import UIKit
 
+// MARK: Protocol
+
 /// Types conforming to this protocol can call the `adjust:from` method and update `current?.health` and `characterHealthField.text` properties.
 protocol CharacterHealthAdjuster: FloatRounder { }
+
+// MARK: - Extension
 
 extension CharacterHealthAdjuster where Self: CharacterSheetVC {
     

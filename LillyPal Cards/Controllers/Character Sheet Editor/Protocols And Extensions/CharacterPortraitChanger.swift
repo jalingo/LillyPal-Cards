@@ -8,11 +8,17 @@
 
 import UIKit
 
+// MARK: Global
+
 /// This global constant stores all available character portraits.
 let characterPortraits = [#imageLiteral(resourceName: "cool_kitty_cat"), #imageLiteral(resourceName: "Quick_rick"), #imageLiteral(resourceName: "steve"), #imageLiteral(resourceName: "Wakil_kepala_yavno"), #imageLiteral(resourceName: "bully_boy_bob")]
 
+// MARK: - Protocol
+
 /// Types conforming to this protocol can call the `nextPortrait` and `previousPortrait` methods, in order to cycle through various portrait presets.
 protocol CharacterPortraitChanger { }
+
+// MARK: - Extension
 
 extension CharacterPortraitChanger where Self: CharacterSheetVC {
     

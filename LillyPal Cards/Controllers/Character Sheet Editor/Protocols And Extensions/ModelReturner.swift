@@ -8,8 +8,12 @@
 
 import UIKit
 
+// MARK: Protocol
+
 /// Types conforming to this protocol can call the `returnModelToMainViewConrtroller` method and pass character model to their parent controller, when their parent is `MainViewController` with `selectedIndex` property.
 protocol CharacterReturner { }
+
+// MARK: - Extension
 
 extension CharacterReturner where Self: CharacterSheetVC {
     

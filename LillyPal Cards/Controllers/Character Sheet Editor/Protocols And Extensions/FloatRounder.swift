@@ -8,8 +8,12 @@
 
 import Foundation
 
+// MARK: Protocol
+
 /// Types conforming to this protocol can call the `round:off:toPlace` method and adjust the amount of digits visible in a Float.
 protocol FloatRounder { }
+
+// MARK: - Extension
 
 extension FloatRounder {
     
