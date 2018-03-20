@@ -99,10 +99,10 @@
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
         </scene>
-        <!--Nav BarNC-->
+        <!--Navigation Controller-->
         <scene sceneID="TJj-aW-Nrs">
             <objects>
-                <navigationController id="50u-bx-goQ" customClass="NavBarNC" customModule="LillyPal_Cards" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController id="50u-bx-goQ" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="yhj-JG-jmw">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>

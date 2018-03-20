@@ -32,8 +32,6 @@
 		A1B365F1205A0665009698B0 /* LillyPal_CardsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B365F0205A0665009698B0 /* LillyPal_CardsUITests.swift */; };
 		A1B365FF205A4081009698B0 /* CardDeckTV.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B365FE205A4081009698B0 /* CardDeckTV.swift */; };
 		A1B36600205A4081009698B0 /* CardDeckTV.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B365FE205A4081009698B0 /* CardDeckTV.swift */; };
-		A1B36602205A4156009698B0 /* NavBarNC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B36601205A4156009698B0 /* NavBarNC.swift */; };
-		A1B36603205A4156009698B0 /* NavBarNC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B36601205A4156009698B0 /* NavBarNC.swift */; };
 		A1B36608205A438F009698B0 /* CharacterSheetVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B36607205A438F009698B0 /* CharacterSheetVC.swift */; };
 		A1B36609205A438F009698B0 /* CharacterSheetVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B36607205A438F009698B0 /* CharacterSheetVC.swift */; };
 		A1B3660A205A6A91009698B0 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B365D2205A0665009698B0 /* MainViewController.swift */; };
@@ -107,7 +105,6 @@
 		A1B365F0205A0665009698B0 /* LillyPal_CardsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LillyPal_CardsUITests.swift; sourceTree = "<group>"; };
 		A1B365F2205A0665009698B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A1B365FE205A4081009698B0 /* CardDeckTV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDeckTV.swift; sourceTree = "<group>"; };
-		A1B36601205A4156009698B0 /* NavBarNC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBarNC.swift; sourceTree = "<group>"; };
 		A1B36607205A438F009698B0 /* CharacterSheetVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterSheetVC.swift; sourceTree = "<group>"; };
 		A1BC6242205CEE9500884829 /* ParentCanTriggerEdits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentCanTriggerEdits.swift; sourceTree = "<group>"; };
 		A1BC6245205CEF2B00884829 /* LillyPal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LillyPal.swift; sourceTree = "<group>"; };
@@ -270,7 +267,6 @@
 			isa = PBXGroup;
 			children = (
 				A1BC626A205F9C5600884829 /* CharacterController.swift */,
-				A1B36601205A4156009698B0 /* NavBarNC.swift */,
 				A194F12E205C376B00BEDAA0 /* Character Sheet List */,
 				A194F120205BC57300BEDAA0 /* Character Sheet Editor */,
 			);
@@ -438,7 +434,6 @@
 				A1BC6255205D2C4A00884829 /* Strings.swift in Sources */,
 				A1BC6243205CEE9500884829 /* ParentCanTriggerEdits.swift in Sources */,
 				A1BC6252205D23F700884829 /* FirstResponderResigner.swift in Sources */,
-				A1B36602205A4156009698B0 /* NavBarNC.swift in Sources */,
 				A194F134205C383600BEDAA0 /* CardDeck Datasource:Delegate.swift in Sources */,
 				A194F137205C474000BEDAA0 /* LillyPalCardTVC.swift in Sources */,
 				A1BC625E205F3C6100884829 /* PlayerStepper.swift in Sources */,
@@ -481,7 +476,6 @@
 				A1B36600205A4081009698B0 /* CardDeckTV.swift in Sources */,
 				A194F129205BCC7600BEDAA0 /* CharacterAttributeChanger.swift in Sources */,
 				A194F12D205C371800BEDAA0 /* MainViewDecorator.swift in Sources */,
-				A1B36603205A4156009698B0 /* NavBarNC.swift in Sources */,
 				A194F126205BC69A00BEDAA0 /* CharacterPortraitChanger.swift in Sources */,
 				A194F11F205ADEEB00BEDAA0 /* Character.swift in Sources */,
 				A1B365E6205A0665009698B0 /* LillyPal_CardsTests.swift in Sources */,
