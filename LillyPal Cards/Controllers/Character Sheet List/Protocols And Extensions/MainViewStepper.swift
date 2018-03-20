@@ -8,10 +8,14 @@
 
 import UIKit
 
-/// Conforming types to this protocol can call `playersChanged:sender` method when a USER triggers an `UIStepper` through an IBAction property.
-protocol PlayerStepper { }
+// MARK: Protocol
 
-extension PlayerStepper where Self: MainViewController {
+/// Conforming types to this protocol can call `playersChanged:sender` method when a USER triggers an `UIStepper` through an IBAction property.
+protocol MainViewStepper { }
+
+// MARK: - Extensions
+
+extension MainViewStepper where Self: MainViewController {
     
     /// This void method changes the players stored in `MainViewController.players` by either appending a new player to the end (when sender has stepped up the number of players) or removing the last player (when sender has stepped down the number of players).
     /// - Parameter sender: The UIStepper passed through to IBAction calling this method.

@@ -10,9 +10,11 @@ import UIKit
 
 // MARK: - Extensions
 
+// MARK: - Extension: UITableViewDelegate
+
 extension CardDeckTV {
     
-    // MARK: - TableViewDelegate
+    // MARK: - Functions: UITableViewDelegate
     
     /// This override of table view method 'cellForRowAt' returns a cell decorated for the character matching indexPath argument.
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -54,20 +56,13 @@ extension CardDeckTV {
     
     /// This override of table view method 'canMoveRowAt' returns true.
     override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool { return true }
-    
-    // MARK: - TableViewDataSource
-
-    /// This override of `numberOfSections` returns 1.
-    override func numberOfSections(in tableView: UITableView) -> Int { return 1 }
-    
-    /// This override of table view method 'numberOfRowsInSection' returns 'MainViewController.players.count' or 0.
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        guard let parent = self.parent as? MainViewController else { return 0 }
-        return parent.players.count
-    }
 }
 
+// MARK: - Extension: UITableViewDataSource
+
 extension CardDeckTV {
+    
+    // MARK: - Functions
     
     /// This fileprivate, void method returns a cell decorated for `tableView.isEditing` is false.
     fileprivate func lillyPalCardWide(for path: IndexPath) -> UITableViewCell {
@@ -85,5 +80,16 @@ extension CardDeckTV {
     fileprivate func lillyPalCardSlim(for path: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: StoryBoardIdentifier.lillyPalSlimCell, for: path)
         return cell
+    }
+    
+    // MARK: - Functions: UITableViewDataSource
+    
+    /// This override of `numberOfSections` returns 1.
+    override func numberOfSections(in tableView: UITableView) -> Int { return 1 }
+    
+    /// This override of table view method 'numberOfRowsInSection' returns 'MainViewController.players.count' or 0.
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        guard let parent = self.parent as? MainViewController else { return 0 }
+        return parent.players.count
     }
 }

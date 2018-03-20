@@ -8,8 +8,12 @@
 
 import UIKit
 
+// MARK: Protocol
+
 /// Conforming types to this protocol can call `updateViews` method when `MainViewController.players` didSet.
 protocol MainViewUpdater { }
+
+// MARK: - Extensions
 
 extension MainViewUpdater where Self: MainViewController {
     

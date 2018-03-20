@@ -11,6 +11,23 @@
 /// Conforming types to this protocol can call `decorateCell` method when `CharacterController.current` didSet.
 protocol LillyPalCardDecorator { }
 
+// MARK: - Extensions
+
+// MARK: - Extension: where LillyPalCardSlimTVC
+
+extension LillyPalCardDecorator where Self: LillyPalCardSlimTVC {
+    
+    /// This void method matches `characterName` and `characterPortrait` to `current`.
+    func decorateCell() {
+        guard let current = current else { return }
+        
+        characterName.text = current.name
+        characterPortrait.image = current.portrait
+    }
+}
+
+// MARK: - Extension: where LillyPalCardTVC
+
 extension LillyPalCardDecorator where Self: LillyPalCardTVC {
     
     /// This void method matches `charName` and `charPortrait` to `current`. Then updates attributes, stats and health labels.
@@ -47,16 +64,5 @@ extension LillyPalCardDecorator where Self: LillyPalCardTVC {
     fileprivate func updateHealth() {
         guard let current = current else { return }
         charHealthLabel.text = "\(current.health) / \(current.maxHealth)"
-    }
-}
-
-extension LillyPalCardDecorator where Self: LillyPalCardSlimTVC {
-    
-    /// This void method matches `characterName` and `characterPortrait` to `current`.
-    func decorateCell() {
-        guard let current = current else { return }
-        
-        characterName.text = current.name
-        characterPortrait.image = current.portrait
     }
 }

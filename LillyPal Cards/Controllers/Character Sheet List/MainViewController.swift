@@ -11,7 +11,7 @@ import UIKit
 // MARK: Class
 
 /// The root view controller and main view, this class contains a list of all saved characters and handles list moderation (including create new and delete functions).
-class MainViewController: UIViewController, MainViewDecorator, MainViewUpdater, PlayerStepper {
+class MainViewController: UIViewController, MainViewDecorator, MainViewUpdater, MainViewStepper {
 
     // MARK: - Properties
  
