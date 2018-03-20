@@ -8,10 +8,14 @@
 
 import Foundation
 
+/// Types conforming to this protocol can call the `change:attribute:to` method, and adjust `current` property stats and attributes.
 protocol CharacterAttributeChanger { }
 
 extension CharacterAttributeChanger where Self: CharacterSheetVC {
     
+    /// This void method sets passed `attribute` to passed `value` in the `current` property. This will also update health and then decorate views.
+    /// - Parameter attribute: This argument specifies which `current` property will be modified.
+    /// - Parameter value: This number should overwrite the previous value.
     func change(attribute: CharacterAttribute, to value: Double) {
         guard let value = Int(exactly: value) else { return }
         

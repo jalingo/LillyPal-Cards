@@ -8,13 +8,15 @@
 
 import UIKit
 
+/// This global constant stores all available character portraits.
 let characterPortraits = [#imageLiteral(resourceName: "cool_kitty_cat"), #imageLiteral(resourceName: "Quick_rick"), #imageLiteral(resourceName: "steve"), #imageLiteral(resourceName: "Wakil_kepala_yavno"), #imageLiteral(resourceName: "bully_boy_bob")]
 
+/// Types conforming to this protocol can call the `nextPortrait` and `previousPortrait` methods, in order to cycle through various portrait presets.
 protocol CharacterPortraitChanger { }
 
 extension CharacterPortraitChanger where Self: CharacterSheetVC {
     
-    // !!
+    /// This method returns the next UIImage in `characterPortraits` for use as a character.portrait property.
     func nextPortrait() -> UIImage {
         guard let img = self.characterPortrait.image, let current = characterPortraits.index(of: img) else { return #imageLiteral(resourceName: "cool_kitty_cat") }
 
@@ -25,7 +27,7 @@ extension CharacterPortraitChanger where Self: CharacterSheetVC {
         }
     }
     
-    // !!
+    /// This method returns the previous UIImage in `characterPortraits` for use as a character.portrait property.
     func previousPortrait() -> UIImage {
         guard let img = self.characterPortrait.image, let current = characterPortraits.index(of: img) else { return #imageLiteral(resourceName: "cool_kitty_cat") }
 

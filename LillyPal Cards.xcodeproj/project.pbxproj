@@ -45,8 +45,6 @@
 		A1BC624A205CEFC700884829 /* LillyPalCardDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BC6248205CEFC700884829 /* LillyPalCardDecorator.swift */; };
 		A1BC624C205D05CB00884829 /* FloatRounder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BC624B205D05CB00884829 /* FloatRounder.swift */; };
 		A1BC624D205D05CB00884829 /* FloatRounder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BC624B205D05CB00884829 /* FloatRounder.swift */; };
-		A1BC624F205D068500884829 /* SpacesAfterDecimalCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BC624E205D068500884829 /* SpacesAfterDecimalCounter.swift */; };
-		A1BC6250205D068500884829 /* SpacesAfterDecimalCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BC624E205D068500884829 /* SpacesAfterDecimalCounter.swift */; };
 		A1BC6252205D23F700884829 /* FirstResponderResigner.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BC6251205D23F700884829 /* FirstResponderResigner.swift */; };
 		A1BC6253205D23F700884829 /* FirstResponderResigner.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BC6251205D23F700884829 /* FirstResponderResigner.swift */; };
 		A1BC6255205D2C4A00884829 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BC6254205D2C4A00884829 /* Strings.swift */; };
@@ -115,7 +113,6 @@
 		A1BC6245205CEF2B00884829 /* LillyPal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LillyPal.swift; sourceTree = "<group>"; };
 		A1BC6248205CEFC700884829 /* LillyPalCardDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LillyPalCardDecorator.swift; sourceTree = "<group>"; };
 		A1BC624B205D05CB00884829 /* FloatRounder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatRounder.swift; sourceTree = "<group>"; };
-		A1BC624E205D068500884829 /* SpacesAfterDecimalCounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpacesAfterDecimalCounter.swift; sourceTree = "<group>"; };
 		A1BC6251205D23F700884829 /* FirstResponderResigner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstResponderResigner.swift; sourceTree = "<group>"; };
 		A1BC6254205D2C4A00884829 /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		A1BC6257205DCA5700884829 /* LillyPalCardSlimTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LillyPalCardSlimTVC.swift; sourceTree = "<group>"; };
@@ -169,7 +166,6 @@
 				A1BC6263205F456B00884829 /* ModelReturner.swift */,
 				A1BC6260205F426B00884829 /* CharacterHealthAdjuster.swift */,
 				A1BC624B205D05CB00884829 /* FloatRounder.swift */,
-				A1BC624E205D068500884829 /* SpacesAfterDecimalCounter.swift */,
 				A194F124205BC69A00BEDAA0 /* CharacterPortraitChanger.swift */,
 				A194F121205BC5B300BEDAA0 /* CharacterSheetDecorator.swift */,
 				A194F127205BCC7600BEDAA0 /* CharacterAttributeChanger.swift */,
@@ -446,7 +442,6 @@
 				A194F134205C383600BEDAA0 /* CardDeck Datasource:Delegate.swift in Sources */,
 				A194F137205C474000BEDAA0 /* LillyPalCardTVC.swift in Sources */,
 				A1BC625E205F3C6100884829 /* PlayerStepper.swift in Sources */,
-				A1BC624F205D068500884829 /* SpacesAfterDecimalCounter.swift in Sources */,
 				A1BC6246205CEF2B00884829 /* LillyPal.swift in Sources */,
 				A1BC624C205D05CB00884829 /* FloatRounder.swift in Sources */,
 				A1B365FF205A4081009698B0 /* CardDeckTV.swift in Sources */,
@@ -481,7 +476,6 @@
 				A194F135205C383600BEDAA0 /* CardDeck Datasource:Delegate.swift in Sources */,
 				A194F138205C474000BEDAA0 /* LillyPalCardTVC.swift in Sources */,
 				A1BC625F205F3C6100884829 /* PlayerStepper.swift in Sources */,
-				A1BC6250205D068500884829 /* SpacesAfterDecimalCounter.swift in Sources */,
 				A1BC6247205CEF2B00884829 /* LillyPal.swift in Sources */,
 				A1BC624D205D05CB00884829 /* FloatRounder.swift in Sources */,
 				A1B36600205A4081009698B0 /* CardDeckTV.swift in Sources */,

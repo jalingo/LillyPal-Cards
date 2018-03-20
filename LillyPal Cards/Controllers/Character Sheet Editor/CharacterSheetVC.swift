@@ -9,7 +9,7 @@
 import UIKit
 
 /// This sub-class of UIViewController is used to make changes to a specific LillyPal, and then pass those changes back to the `MainViewController` root.
-class CharacterSheetVC: UIViewController, CharacterController, CharacterSheetDecorator, CharacterPortraitChanger, CharacterAttributeChanger, SpacesAfterDecimalCounter, FloatRounder, CharacterHealthAdjuster, CharacterReturner {
+class CharacterSheetVC: UIViewController, CharacterController, CharacterSheetDecorator, CharacterPortraitChanger, CharacterAttributeChanger, CharacterHealthAdjuster, CharacterReturner {
 
     // MARK: - Properties
 
@@ -107,6 +107,6 @@ class CharacterSheetVC: UIViewController, CharacterController, CharacterSheetDec
 
 extension CharacterSheetVC: FirstResponderResigner {
     
-    // !!
+    /// This read-only, computed property returns an array with all possible responders that can be resigned.
     var responders: [UIResponder] { return [characterNameField] }
 }

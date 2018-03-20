@@ -8,11 +8,12 @@
 
 import UIKit
 
+/// Types conforming to this protocol can call the `returnModelToMainViewConrtroller` method and pass character model to their parent controller, when their parent is `MainViewController` with `selectedIndex` property.
 protocol CharacterReturner { }
 
 extension CharacterReturner where Self: CharacterSheetVC {
     
-    /// This void method passes data model changes back to main view.
+    /// This void method passes data model changes back to main view controller through navigation controller.
     func returnModelToMainViewController() {
         guard let pal = current as? LillyPal,
             let index = self.navigationController?.viewControllers.index(where: { $0 is MainViewController }),

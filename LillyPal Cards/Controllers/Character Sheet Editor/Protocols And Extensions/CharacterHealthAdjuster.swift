@@ -8,14 +8,16 @@
 
 import UIKit
 
-protocol CharacterHealthAdjuster { }
+/// Types conforming to this protocol can call the `adjust:from` method and update `current?.health` and `characterHealthField.text` properties.
+protocol CharacterHealthAdjuster: FloatRounder { }
 
 extension CharacterHealthAdjuster where Self: CharacterSheetVC {
     
-    // !!
+    /// This void method updates `current?.health` and `characterHealthField.text` properties based on slider parameter.
+    /// - Parameter slider: This argument's value property will be used to make adjustments to character model and views.
     func adjust(from slider: UISlider) {
-        guard let current = current,
-            let roundedValue = Int(exactly: round(off: slider.value, toPlace: 0)) else { return }
+        guard let roundedValue = Int(exactly: round(off: slider.value, toPlace: 0)),
+            let current = current else { return }
         
         characterHealthField.text = "\(roundedValue) / \(current.maxHealth)"
         self.current?.health = roundedValue
