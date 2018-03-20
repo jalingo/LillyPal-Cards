@@ -8,6 +8,8 @@
 
 import UIKit
 
+// MARK: Class
+
 /// The root view controller and main view, this class contains a list of all saved characters and handles list moderation (including create new and delete functions).
 class MainViewController: UIViewController, MainViewDecorator, MainViewUpdater, PlayerStepper {
 
@@ -37,10 +39,12 @@ class MainViewController: UIViewController, MainViewDecorator, MainViewUpdater, 
     // MARK: - Functions: IBActions
     
     /// This IBAction method is triggered when USER taps the edit button and alternates the `isEditing` property of table view in `listOfPlayersView` through a notification.
+    /// - Parameter sender: The UIButton that triggered IBAction call by being tapped by the USER.
     @IBAction func editButtonTapped(_ sender: UIButton) {
         NotificationCenter.default.post(name: editButtonNotification, object: nil) }
     
     /// This IBAction method is triggered when USER interacts with `numberOfPlayersStepper` and changes the number of players in the direction USER indicated.
+    /// - Parameter sender: The UIStepper that triggered IBAction call by being tapped by the USER.
     @IBAction func numberOfPlayersStepped(_ sender: UIStepper) { playersChanged(by: sender) }
     
     // MARK: - Functions: UIViewController

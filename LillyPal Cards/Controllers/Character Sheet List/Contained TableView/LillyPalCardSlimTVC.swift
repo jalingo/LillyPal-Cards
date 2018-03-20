@@ -8,6 +8,8 @@
 
 import UIKit
 
+// MARK: Class
+
 /// This sub-class of `UITableViewCell` is dequeued by `CardDeckTV` when it's `isEditing` property is set to `true` and it has to present characters.
 class LillyPalCardSlimTVC: UITableViewCell, CharacterController, LillyPalCardDecorator {
     

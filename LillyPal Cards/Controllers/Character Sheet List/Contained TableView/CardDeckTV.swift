@@ -8,6 +8,8 @@
 
 import UIKit
 
+// MARK: Class
+
 /// This sub class of `UITableViewController` is contained in `MainViewController` and displays the list of character's stored in it's parent's `players` property.
 class CardDeckTV: UITableViewController, ParentModelChangeListener, ParentCanTriggerEdits {
 
