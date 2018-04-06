@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		40DD42571F9E3291A9B23C66 /* Pods_LillyPal_Cards.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83A80DCD842AD46AAD33970A /* Pods_LillyPal_Cards.framework */; };
 		A194F11E205ADEEB00BEDAA0 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = A194F11D205ADEEB00BEDAA0 /* Character.swift */; };
 		A194F11F205ADEEB00BEDAA0 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = A194F11D205ADEEB00BEDAA0 /* Character.swift */; };
 		A194F122205BC5B300BEDAA0 /* CharacterSheetDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A194F121205BC5B300BEDAA0 /* CharacterSheetDecorator.swift */; };
@@ -84,6 +85,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		53777B4376AC16690490A57D /* Pods-LillyPal Cards.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LillyPal Cards.release.xcconfig"; path = "Pods/Target Support Files/Pods-LillyPal Cards/Pods-LillyPal Cards.release.xcconfig"; sourceTree = "<group>"; };
+		83A80DCD842AD46AAD33970A /* Pods_LillyPal_Cards.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LillyPal_Cards.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		97E329F37D4202C5CC5B8119 /* Pods-LillyPal Cards.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LillyPal Cards.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LillyPal Cards/Pods-LillyPal Cards.debug.xcconfig"; sourceTree = "<group>"; };
 		A194F11D205ADEEB00BEDAA0 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		A194F121205BC5B300BEDAA0 /* CharacterSheetDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterSheetDecorator.swift; sourceTree = "<group>"; };
 		A194F124205BC69A00BEDAA0 /* CharacterPortraitChanger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterPortraitChanger.swift; sourceTree = "<group>"; };
@@ -131,6 +135,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A1B5AA22207832E20046EF3E /* CloudKit.framework in Frameworks */,
+				40DD42571F9E3291A9B23C66 /* Pods_LillyPal_Cards.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,6 +156,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9F73719F1E5E4D163E86409B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				97E329F37D4202C5CC5B8119 /* Pods-LillyPal Cards.debug.xcconfig */,
+				53777B4376AC16690490A57D /* Pods-LillyPal Cards.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		A194F120205BC57300BEDAA0 /* Character Sheet Editor */ = {
 			isa = PBXGroup;
 			children = (
@@ -214,6 +228,7 @@
 				A1B365EF205A0665009698B0 /* LillyPal CardsUITests */,
 				A1B365CE205A0665009698B0 /* Products */,
 				A1B5AA20207832E20046EF3E /* Frameworks */,
+				9F73719F1E5E4D163E86409B /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -293,6 +308,7 @@
 			isa = PBXGroup;
 			children = (
 				A1B5AA21207832E20046EF3E /* CloudKit.framework */,
+				83A80DCD842AD46AAD33970A /* Pods_LillyPal_Cards.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -315,9 +331,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A1B365F5205A0665009698B0 /* Build configuration list for PBXNativeTarget "LillyPal Cards" */;
 			buildPhases = (
+				AD378DBD190732E78AC2A512 /* [CP] Check Pods Manifest.lock */,
 				A1B365C9205A0665009698B0 /* Sources */,
 				A1B365CA205A0665009698B0 /* Frameworks */,
 				A1B365CB205A0665009698B0 /* Resources */,
+				407CFA3EB9C5CB0701DF9878 /* [CP] Embed Pods Frameworks */,
+				1FBA43CB6ACBC0AE35F6E346 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -444,6 +463,60 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1FBA43CB6ACBC0AE35F6E346 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LillyPal Cards/Pods-LillyPal Cards-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		407CFA3EB9C5CB0701DF9878 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-LillyPal Cards/Pods-LillyPal Cards-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/MagicCloud/MagicCloud.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MagicCloud.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LillyPal Cards/Pods-LillyPal Cards-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AD378DBD190732E78AC2A512 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LillyPal Cards-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A1B365C9205A0665009698B0 /* Sources */ = {
@@ -664,6 +737,7 @@
 		};
 		A1B365F6205A0665009698B0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 97E329F37D4202C5CC5B8119 /* Pods-LillyPal Cards.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "LillyPal Cards/LillyPal Cards.entitlements";
@@ -680,6 +754,7 @@
 		};
 		A1B365F7205A0665009698B0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53777B4376AC16690490A57D /* Pods-LillyPal Cards.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "LillyPal Cards/LillyPal Cards.entitlements";
