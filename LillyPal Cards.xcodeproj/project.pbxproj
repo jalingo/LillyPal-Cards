@@ -35,6 +35,7 @@
 		A1B36608205A438F009698B0 /* CharacterSheetVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B36607205A438F009698B0 /* CharacterSheetVC.swift */; };
 		A1B36609205A438F009698B0 /* CharacterSheetVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B36607205A438F009698B0 /* CharacterSheetVC.swift */; };
 		A1B3660A205A6A91009698B0 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B365D2205A0665009698B0 /* MainViewController.swift */; };
+		A1B5AA22207832E20046EF3E /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1B5AA21207832E20046EF3E /* CloudKit.framework */; };
 		A1BC6243205CEE9500884829 /* ParentCanTriggerEdits.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BC6242205CEE9500884829 /* ParentCanTriggerEdits.swift */; };
 		A1BC6244205CEE9600884829 /* ParentCanTriggerEdits.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BC6242205CEE9500884829 /* ParentCanTriggerEdits.swift */; };
 		A1BC6246205CEF2B00884829 /* LillyPal.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BC6245205CEF2B00884829 /* LillyPal.swift */; };
@@ -106,6 +107,8 @@
 		A1B365F2205A0665009698B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A1B365FE205A4081009698B0 /* CardDeckTV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDeckTV.swift; sourceTree = "<group>"; };
 		A1B36607205A438F009698B0 /* CharacterSheetVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterSheetVC.swift; sourceTree = "<group>"; };
+		A1B5AA1F207832DB0046EF3E /* LillyPal Cards.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "LillyPal Cards.entitlements"; sourceTree = "<group>"; };
+		A1B5AA21207832E20046EF3E /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		A1BC6242205CEE9500884829 /* ParentCanTriggerEdits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentCanTriggerEdits.swift; sourceTree = "<group>"; };
 		A1BC6245205CEF2B00884829 /* LillyPal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LillyPal.swift; sourceTree = "<group>"; };
 		A1BC6248205CEFC700884829 /* LillyPalCardDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LillyPalCardDecorator.swift; sourceTree = "<group>"; };
@@ -127,6 +130,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1B5AA22207832E20046EF3E /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,6 +213,7 @@
 				A1B365E4205A0665009698B0 /* LillyPal CardsTests */,
 				A1B365EF205A0665009698B0 /* LillyPal CardsUITests */,
 				A1B365CE205A0665009698B0 /* Products */,
+				A1B5AA20207832E20046EF3E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -225,6 +230,7 @@
 		A1B365CF205A0665009698B0 /* LillyPal Cards */ = {
 			isa = PBXGroup;
 			children = (
+				A1B5AA1F207832DB0046EF3E /* LillyPal Cards.entitlements */,
 				A1BC6254205D2C4A00884829 /* Strings.swift */,
 				A1B365D0205A0665009698B0 /* AppDelegate.swift */,
 				A1B36606205A4187009698B0 /* Models */,
@@ -281,6 +287,14 @@
 				A1BC6245205CEF2B00884829 /* LillyPal.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		A1B5AA20207832E20046EF3E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A1B5AA21207832E20046EF3E /* CloudKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		A1BC6266205F995600884829 /* TableView */ = {
@@ -363,6 +377,14 @@
 					A1B365CC205A0665009698B0 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
 					};
 					A1B365E0205A0665009698B0 = {
 						CreatedOnToolsVersion = 9.2;
@@ -644,6 +666,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "LillyPal Cards/LillyPal Cards.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2ASS3F562Z;
 				INFOPLIST_FILE = "LillyPal Cards/Info.plist";
@@ -659,6 +682,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "LillyPal Cards/LillyPal Cards.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2ASS3F562Z;
 				INFOPLIST_FILE = "LillyPal Cards/Info.plist";
