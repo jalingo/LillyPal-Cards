@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CloudKit
 
 // MARK: Struct
 
@@ -34,6 +35,10 @@ struct LillyPal: Character {
     
     /// This property contains the LillyPal's portrait image..
     var portrait = #imageLiteral(resourceName: "cool_kitty_cat")
+    
+    // MARK: - Properties: MCRecordable
+    
+    var recordID = CKRecordID(recordName: "created \(Date().timeIntervalSince1970)")
 }
 
 // MARK: - Extensions

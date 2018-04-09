@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		40DD42571F9E3291A9B23C66 /* Pods_LillyPal_Cards.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83A80DCD842AD46AAD33970A /* Pods_LillyPal_Cards.framework */; };
+		40DD42571F9E3291A9B23C66 /* Pods_LillyPal_Cards.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83A80DCD842AD46AAD33970A /* Pods_LillyPal_Cards.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		A194F11E205ADEEB00BEDAA0 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = A194F11D205ADEEB00BEDAA0 /* Character.swift */; };
 		A194F11F205ADEEB00BEDAA0 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = A194F11D205ADEEB00BEDAA0 /* Character.swift */; };
 		A194F122205BC5B300BEDAA0 /* CharacterSheetDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A194F121205BC5B300BEDAA0 /* CharacterSheetDecorator.swift */; };
@@ -37,6 +37,8 @@
 		A1B36609205A438F009698B0 /* CharacterSheetVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B36607205A438F009698B0 /* CharacterSheetVC.swift */; };
 		A1B3660A205A6A91009698B0 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B365D2205A0665009698B0 /* MainViewController.swift */; };
 		A1B5AA22207832E20046EF3E /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1B5AA21207832E20046EF3E /* CloudKit.framework */; };
+		A1B5AA24207834EB0046EF3E /* LillyPal_MCRecordable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B5AA23207834EB0046EF3E /* LillyPal_MCRecordable.swift */; };
+		A1B5AA25207834EB0046EF3E /* LillyPal_MCRecordable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B5AA23207834EB0046EF3E /* LillyPal_MCRecordable.swift */; };
 		A1BC6243205CEE9500884829 /* ParentCanTriggerEdits.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BC6242205CEE9500884829 /* ParentCanTriggerEdits.swift */; };
 		A1BC6244205CEE9600884829 /* ParentCanTriggerEdits.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BC6242205CEE9500884829 /* ParentCanTriggerEdits.swift */; };
 		A1BC6246205CEF2B00884829 /* LillyPal.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BC6245205CEF2B00884829 /* LillyPal.swift */; };
@@ -65,6 +67,8 @@
 		A1BC626C205F9C5600884829 /* CharacterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BC626A205F9C5600884829 /* CharacterController.swift */; };
 		A1BC626E205FBE8B00884829 /* TextField Delegation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BC626D205FBE8B00884829 /* TextField Delegation.swift */; };
 		A1BC626F205FBE8B00884829 /* TextField Delegation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BC626D205FBE8B00884829 /* TextField Delegation.swift */; };
+		A1DA886820784CEB00827976 /* ImageConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DA886720784CEB00827976 /* ImageConverter.swift */; };
+		A1DA886920784CEB00827976 /* ImageConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DA886720784CEB00827976 /* ImageConverter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +92,7 @@
 		53777B4376AC16690490A57D /* Pods-LillyPal Cards.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LillyPal Cards.release.xcconfig"; path = "Pods/Target Support Files/Pods-LillyPal Cards/Pods-LillyPal Cards.release.xcconfig"; sourceTree = "<group>"; };
 		83A80DCD842AD46AAD33970A /* Pods_LillyPal_Cards.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LillyPal_Cards.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		97E329F37D4202C5CC5B8119 /* Pods-LillyPal Cards.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LillyPal Cards.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LillyPal Cards/Pods-LillyPal Cards.debug.xcconfig"; sourceTree = "<group>"; };
+		A1012894207836B000068EE1 /* MagicCloud.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MagicCloud.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A194F11D205ADEEB00BEDAA0 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		A194F121205BC5B300BEDAA0 /* CharacterSheetDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterSheetDecorator.swift; sourceTree = "<group>"; };
 		A194F124205BC69A00BEDAA0 /* CharacterPortraitChanger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterPortraitChanger.swift; sourceTree = "<group>"; };
@@ -113,6 +118,7 @@
 		A1B36607205A438F009698B0 /* CharacterSheetVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterSheetVC.swift; sourceTree = "<group>"; };
 		A1B5AA1F207832DB0046EF3E /* LillyPal Cards.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "LillyPal Cards.entitlements"; sourceTree = "<group>"; };
 		A1B5AA21207832E20046EF3E /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		A1B5AA23207834EB0046EF3E /* LillyPal_MCRecordable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LillyPal_MCRecordable.swift; sourceTree = "<group>"; };
 		A1BC6242205CEE9500884829 /* ParentCanTriggerEdits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentCanTriggerEdits.swift; sourceTree = "<group>"; };
 		A1BC6245205CEF2B00884829 /* LillyPal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LillyPal.swift; sourceTree = "<group>"; };
 		A1BC6248205CEFC700884829 /* LillyPalCardDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LillyPalCardDecorator.swift; sourceTree = "<group>"; };
@@ -127,6 +133,7 @@
 		A1BC6267205F9B6000884829 /* CharacterAttribute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterAttribute.swift; sourceTree = "<group>"; };
 		A1BC626A205F9C5600884829 /* CharacterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterController.swift; sourceTree = "<group>"; };
 		A1BC626D205FBE8B00884829 /* TextField Delegation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TextField Delegation.swift"; sourceTree = "<group>"; };
+		A1DA886720784CEB00827976 /* ImageConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageConverter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -300,6 +307,8 @@
 				A194F11D205ADEEB00BEDAA0 /* Character.swift */,
 				A1BC6267205F9B6000884829 /* CharacterAttribute.swift */,
 				A1BC6245205CEF2B00884829 /* LillyPal.swift */,
+				A1B5AA23207834EB0046EF3E /* LillyPal_MCRecordable.swift */,
+				A1DA886720784CEB00827976 /* ImageConverter.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -307,6 +316,7 @@
 		A1B5AA20207832E20046EF3E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A1012894207836B000068EE1 /* MagicCloud.framework */,
 				A1B5AA21207832E20046EF3E /* CloudKit.framework */,
 				83A80DCD842AD46AAD33970A /* Pods_LillyPal_Cards.framework */,
 			);
@@ -397,6 +407,9 @@
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
 							com.apple.Push = {
 								enabled = 1;
 							};
@@ -526,6 +539,7 @@
 				A1BC6249205CEFC700884829 /* LillyPalCardDecorator.swift in Sources */,
 				A1BC625B205F3AE700884829 /* MainViewUpdater.swift in Sources */,
 				A194F131205C37F400BEDAA0 /* ParentModelChangeListener.swift in Sources */,
+				A1B5AA24207834EB0046EF3E /* LillyPal_MCRecordable.swift in Sources */,
 				A1BC6255205D2C4A00884829 /* Strings.swift in Sources */,
 				A1BC6243205CEE9500884829 /* ParentCanTriggerEdits.swift in Sources */,
 				A1BC6252205D23F700884829 /* FirstResponderResigner.swift in Sources */,
@@ -544,6 +558,7 @@
 				A1BC6268205F9B6000884829 /* CharacterAttribute.swift in Sources */,
 				A1BC6258205DCA5700884829 /* LillyPalCardSlimTVC.swift in Sources */,
 				A1BC626B205F9C5600884829 /* CharacterController.swift in Sources */,
+				A1DA886820784CEB00827976 /* ImageConverter.swift in Sources */,
 				A1BC6261205F426B00884829 /* CharacterHealthAdjuster.swift in Sources */,
 				A1BC6264205F456B00884829 /* ModelReturner.swift in Sources */,
 				A194F122205BC5B300BEDAA0 /* CharacterSheetDecorator.swift in Sources */,
@@ -559,6 +574,7 @@
 				A1BC624A205CEFC700884829 /* LillyPalCardDecorator.swift in Sources */,
 				A1BC625C205F3AE700884829 /* MainViewUpdater.swift in Sources */,
 				A194F132205C37F400BEDAA0 /* ParentModelChangeListener.swift in Sources */,
+				A1B5AA25207834EB0046EF3E /* LillyPal_MCRecordable.swift in Sources */,
 				A1BC6256205D2C4A00884829 /* Strings.swift in Sources */,
 				A1BC6244205CEE9600884829 /* ParentCanTriggerEdits.swift in Sources */,
 				A1BC6253205D23F700884829 /* FirstResponderResigner.swift in Sources */,
@@ -577,6 +593,7 @@
 				A1BC6269205F9B6000884829 /* CharacterAttribute.swift in Sources */,
 				A1BC6259205DFDD300884829 /* LillyPalCardSlimTVC.swift in Sources */,
 				A1BC626C205F9C5600884829 /* CharacterController.swift in Sources */,
+				A1DA886920784CEB00827976 /* ImageConverter.swift in Sources */,
 				A1BC6262205F426B00884829 /* CharacterHealthAdjuster.swift in Sources */,
 				A1BC6265205F456B00884829 /* ModelReturner.swift in Sources */,
 				A194F123205BC5B300BEDAA0 /* CharacterSheetDecorator.swift in Sources */,
@@ -745,6 +762,7 @@
 				DEVELOPMENT_TEAM = 2ASS3F562Z;
 				INFOPLIST_FILE = "LillyPal Cards/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = "EscapeChaos.LillyPal-Cards";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

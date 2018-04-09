@@ -7,15 +7,26 @@
 //
 
 import UIKit
+import MagicCloud
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, MCNotificationConverter {
 
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        MCUserRecord.verifyAccountAuthentication()
+        application.registerForRemoteNotifications()
+        
         return true
+    }
+    
+    func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any], fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
+        if convertToLocal(from: userInfo) {
+            completionHandler(.newData)
+        } else {
+            completionHandler(.noData)
+        }
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

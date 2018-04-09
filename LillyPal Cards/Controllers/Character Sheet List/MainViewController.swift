@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MagicCloud
 
 // MARK: Class
 
@@ -14,10 +15,15 @@ import UIKit
 class MainViewController: UIViewController, MainViewDecorator, MainViewUpdater, MainViewStepper {
 
     // MARK: - Properties
- 
+    
+    let _players = MCMirror<LillyPal>(db: .privateDB)
+    
     /// This property contains an array of the LillyPal characters being presented in `listOfPlayersView`. When set, it will update views with changes.
-    var players = [LillyPal]() {
-        didSet { updateViews() }
+    var players/*: [LillyPal] { */ = [LillyPal]() {
+        didSet {
+//            _players.cloudRecordables = players
+            updateViews()
+        }
     }
     
     /// This optional property contains the index of the character selected by USER, set in `listOfPlayersView`, when not nil.
