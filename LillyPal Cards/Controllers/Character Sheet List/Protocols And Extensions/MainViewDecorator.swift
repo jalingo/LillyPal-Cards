@@ -15,6 +15,7 @@ extension MainViewDecorator where Self: MainViewController {
 
     /// This void method hide nav bar and configures `MainViewController.numberOfPlayersStepper`.
     func decorate() {
+        self.navigationController?.navigationBar.setBackgroundImage(#imageLiteral(resourceName: "Lunch_time"), for: .default)
         self.navigationController?.isNavigationBarHidden = true
         configureStepper()
     }
