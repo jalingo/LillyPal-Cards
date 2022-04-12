@@ -70,11 +70,3 @@ class MainViewController: UIViewController, MainViewDecorator, MainViewUpdater, 
     }
 }
 
-// MARK: - Structs
-
-/// This struct contains URLs capable of being opened in USER's default browser.
-struct URL_string {
-    
-    /// This static, constant property contains a URL that links to a domain where USER can purchase the core rulebook.
-    static let webShop = "https://www.etsy.com/listing/582023574/lillypalooza?gpla=1&gao=1&&utm_source=google&utm_medium=cpc&utm_campaign=shopping_us_c-toys_and_games-games_and_puzzles-role_playing_games&utm_custom1=33aafbd3-4624-4965-ab87-5fe36e8838e4&gclid=CjwKCAjwwbHWBRBWEiwAMIV7E6caXQlzhAeA9K9VAuDYMitz3ecX5HgzjbShp1dqvy1HuWHhD2sVRRoC2XUQAvD_BwE"
-}
