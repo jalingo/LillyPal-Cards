@@ -24,7 +24,7 @@ extension CharacterPortraitChanger where Self: CharacterSheetVC {
     
     /// This method returns the next UIImage in `characterPortraits` for use as a character.portrait property.
     func nextPortrait() -> UIImage {
-        guard let img = self.characterPortrait.image, let current = characterPortraits.index(of: img) else { return #imageLiteral(resourceName: "cool_kitty_cat") }
+        guard let img = self.characterPortrait.image, let current = characterPortraits.firstIndex(of: img) else { return #imageLiteral(resourceName: "cool_kitty_cat") }
 
         if current + 1 < characterPortraits.count - 1 {
             return characterPortraits[current + 1]
@@ -35,7 +35,7 @@ extension CharacterPortraitChanger where Self: CharacterSheetVC {
     
     /// This method returns the previous UIImage in `characterPortraits` for use as a character.portrait property.
     func previousPortrait() -> UIImage {
-        guard let img = self.characterPortrait.image, let current = characterPortraits.index(of: img) else { return #imageLiteral(resourceName: "cool_kitty_cat") }
+        guard let img = self.characterPortrait.image, let current = characterPortraits.firstIndex(of: img) else { return #imageLiteral(resourceName: "cool_kitty_cat") }
 
         if current - 1 > -1 {
             return characterPortraits[current - 1]

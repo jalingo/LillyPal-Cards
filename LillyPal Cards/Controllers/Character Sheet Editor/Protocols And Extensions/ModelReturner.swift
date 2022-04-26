@@ -20,7 +20,7 @@ extension CharacterReturner where Self: CharacterSheetVC {
     /// This void method passes data model changes back to main view controller through navigation controller.
     func returnModelToMainViewController() {
         guard let pal = current as? LillyPal,
-            let index = self.navigationController?.viewControllers.index(where: { $0 is MainViewController }),
+              let index = self.navigationController?.viewControllers.firstIndex(where: { $0 is MainViewController }),
             let controller = self.navigationController?.viewControllers[index] as? MainViewController,
             let selectedIndex = controller.selectedIndex else { return }
         
