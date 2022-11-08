@@ -3,11 +3,10 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 48;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A17533A6291B1448009C8D75 /* LillypaloozaContent in Frameworks */ = {isa = PBXBuildFile; productRef = A17533A5291B1448009C8D75 /* LillypaloozaContent */; };
 		A17533A8291B19C0009C8D75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A17533A7291B19C0009C8D75 /* Assets.xcassets */; };
 		A194F11E205ADEEB00BEDAA0 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = A194F11D205ADEEB00BEDAA0 /* Character.swift */; };
 		A194F11F205ADEEB00BEDAA0 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = A194F11D205ADEEB00BEDAA0 /* Character.swift */; };
@@ -128,7 +127,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A17533A6291B1448009C8D75 /* LillypaloozaContent in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,7 +311,6 @@
 			);
 			name = "LillyPal Cards";
 			packageProductDependencies = (
-				A17533A5291B1448009C8D75 /* LillypaloozaContent */,
 			);
 			productName = "LillyPal Cards";
 			productReference = A1B365CD205A0665009698B0 /* LillyPal Cards.app */;
@@ -394,7 +391,6 @@
 			);
 			mainGroup = A1B365C4205A0665009698B0;
 			packageReferences = (
-				A17533A4291B1448009C8D75 /* XCRemoteSwiftPackageReference "LillypaloozaContent" */,
 			);
 			productRefGroup = A1B365CE205A0665009698B0 /* Products */;
 			projectDirPath = "";
@@ -666,10 +662,7 @@
 				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = 2ASS3F562Z;
 				INFOPLIST_FILE = "LillyPal Cards/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MARKETING_VERSION = 1.0.3;
 				PRODUCT_BUNDLE_IDENTIFIER = "EscapeChaos.LillyPal-Cards";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -686,10 +679,7 @@
 				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = 2ASS3F562Z;
 				INFOPLIST_FILE = "LillyPal Cards/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MARKETING_VERSION = 1.0.3;
 				PRODUCT_BUNDLE_IDENTIFIER = "EscapeChaos.LillyPal-Cards";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -706,11 +696,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2ASS3F562Z;
 				INFOPLIST_FILE = "LillyPal CardsTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "EscapeChaos.LillyPal-CardsTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -727,11 +713,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2ASS3F562Z;
 				INFOPLIST_FILE = "LillyPal CardsTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "EscapeChaos.LillyPal-CardsTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -747,11 +729,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2ASS3F562Z;
 				INFOPLIST_FILE = "LillyPal CardsUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "EscapeChaos.LillyPal-CardsUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -767,11 +745,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2ASS3F562Z;
 				INFOPLIST_FILE = "LillyPal CardsUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "EscapeChaos.LillyPal-CardsUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -820,25 +794,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		A17533A4291B1448009C8D75 /* XCRemoteSwiftPackageReference "LillypaloozaContent" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/BadPoetryGames/LillypaloozaContent.git";
-			requirement = {
-				branch = main;
-				kind = branch;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		A17533A5291B1448009C8D75 /* LillypaloozaContent */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = A17533A4291B1448009C8D75 /* XCRemoteSwiftPackageReference "LillypaloozaContent" */;
-			productName = LillypaloozaContent;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A1B365C5205A0665009698B0 /* Project object */;
 }
