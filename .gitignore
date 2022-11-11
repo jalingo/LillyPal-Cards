@@ -1,3 +1,4 @@
 ## Xcode local settings cache
+*.DS_Store
 xcuserdata/
 xcshareddata/
